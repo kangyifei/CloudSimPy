@@ -2,7 +2,7 @@ import numpy as np
 from core.alogrithm import Algorithm
 
 
-class RandomAlgorithm(Algorithm):
+class RandomTaskalgorithm(Algorithm):
     def __init__(self, threshold=0.8):
         self.threshold = threshold
 

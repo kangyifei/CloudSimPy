@@ -27,11 +27,11 @@ os.environ['CUDA_VISIBLE_DEVICES'] = ''
 np.random.seed(41)
 tf.random.set_random_seed(41)
 # ************************ Parameters Setting Start ************************
-machines_number = 5
+machines_number = 15
 jobs_len = 10
 n_iter = 100
 n_episode = 12
-jobs_csv = '../jobs_files/jobs.csv'
+jobs_csv = '../jobs.csv'
 
 brain = Brain(9)
 reward_giver = AverageCompletionRewardGiver()

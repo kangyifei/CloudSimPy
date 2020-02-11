@@ -1,7 +1,7 @@
 import json
 
 
-class Monitor(object):
+class TaskStatusMonitor(object):
     def __init__(self, simulation):
         self.simulation = simulation
         self.env = simulation.env

@@ -238,7 +238,6 @@ class TaskInstance(object):
 
         self.finished = True
         self.finished_timestamp = self.env.now
-
         self.machine.stop_task_instance(self)
 
     def schedule(self, machine):

@@ -8,9 +8,9 @@ import sys
 sys.path.append('..')
 
 from core.machine import MachineConfig
-from playground.Non_DAG.algorithm.random_algorithm import RandomAlgorithm
+from playground.Non_DAG.algorithm.random_algorithm import RandomTaskalgorithm
 from playground.Non_DAG.algorithm.tetris import Tetris
-from playground.Non_DAG.algorithm.first_fit import FirstFitAlgorithm
+from playground.Non_DAG.algorithm.first_fit import FirstFitTaskalgorithm
 from playground.Non_DAG.algorithm.DeepJS.DRL import RLAlgorithm
 from playground.Non_DAG.algorithm.DeepJS.agent import Agent
 from playground.Non_DAG.algorithm.DeepJS.brain import Brain
@@ -53,13 +53,13 @@ csv_reader = CSVReader(jobs_csv)
 jobs_configs = csv_reader.generate(0, jobs_len)
 
 tic = time.time()
-algorithm = RandomAlgorithm()
+algorithm = RandomTaskalgorithm()
 episode = Episode(machine_configs, jobs_configs, algorithm, None)
 episode.run()
 print(episode.env.now, time.time() - tic, average_completion(episode), average_slowdown(episode))
 
 tic = time.time()
-algorithm = FirstFitAlgorithm()
+algorithm = FirstFitTaskalgorithm()
 episode = Episode(machine_configs, jobs_configs, algorithm, None)
 episode.run()
 print(episode.env.now, time.time() - tic, average_completion(episode), average_slowdown(episode))
