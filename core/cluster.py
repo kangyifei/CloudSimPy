@@ -2,9 +2,19 @@ from core.machine import Machine
 
 
 class Cluster(object):
+
     def __init__(self):
         self.machines = []
         self.jobs = []
+        self.simulation = None
+        self.cluster_task_finished_num = 0
+        self.monitor = None
+
+    def attach(self, simulation):
+        self.simulation = simulation
+
+    def attach_monitor(self, monitor):
+        self.monitor = monitor
 
     @property
     def unfinished_jobs(self):
@@ -72,6 +82,9 @@ class Cluster(object):
 
     def add_job(self, job):
         self.jobs.append(job)
+        # print("cluster: one job added")
+        self.simulation.job_event.succeed(value="add")
+        self.simulation.job_event = self.simulation.env.event()
 
     @property
     def cpu(self):

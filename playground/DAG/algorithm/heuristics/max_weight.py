@@ -1,8 +1,8 @@
 from playground.DAG.utils.feature_synthesize import weights_calculate
-from core.alogrithm import Algorithm
+from core.algorithm import Algorithm
 
 
-class MaxWeightAlgorithm(Algorithm):
+class MaxWeightTaskalgorithm(Algorithm):
     def __call__(self, cluster, clock):
         machines = cluster.machines
         tasks = weights_calculate(cluster.ready_tasks_which_has_waiting_instance)

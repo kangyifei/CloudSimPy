@@ -21,7 +21,11 @@ def average_slowdown(exp):
             number_task += 1
             slowdown += (task.finished_timestamp - task.started_timestamp) / task.task_config.duration
     return slowdown / number_task
-
+def total_energy_consume(exp):
+    for machine in exp.simulation.cluster.machines:
+        state=machine.state
+        cpu=state['cpu_usage_percent']
+        memory=state['memory_usage_percent']
 
 def multiprocessing_run(episode, trajectories, makespans, average_completions, average_slowdowns):
     np.random.seed(int(time.time()))

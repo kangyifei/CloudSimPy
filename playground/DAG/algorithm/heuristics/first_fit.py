@@ -1,7 +1,7 @@
-from core.alogrithm import Algorithm
+from core.algorithm import Algorithm
 
 
-class FirstFitAlgorithm(Algorithm):
+class FirstFitTaskalgorithm(Algorithm):
     def __call__(self, cluster, clock):
         machines = cluster.machines
         tasks = cluster.ready_tasks_which_has_waiting_instance

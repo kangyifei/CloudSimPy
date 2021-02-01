@@ -1,0 +1,41 @@
+MLU grid generation report                        2020/12/26 20:35:16
+==========================
+
+Iteration  Rule Scaling  Finest grid                      Number of Cells     Number of Levels (Populated)
+1          1             163200 (68 x 48 x 50)            122070              9 (4)
+2          1.59648       81396 (51 x 38 x 42)             65151               9 (4)
+3          2.06742       59670 (45 x 34 x 39)             49033               8 (4)
+4          2.43529       48825 (45 x 31 x 35)             42183               8 (4)
+5          2.72829       47250 (45 x 30 x 35)             41525               9 (5)
+6          3.04056       43384 (44 x 29 x 34)             38798               9 (5)
+
+Number of 3D grid controls: 293
+Number of 3D gap bounds: 2440
+
+Profiling data
+==============
+Location                                                                        # visits  Total time  Self time   Total %   Self %    Memory (MB) 
+mlugridbuilder.cpp:46:"MLUGridBuilder"                                          1         0.3289      0.0005285   100       0.1607    6           
+  mlugridbuilder.cpp:54:"GapFinding"                                            1         0.01246     0.009945    3.788     3.024     0           
+    gapfinder.cpp:173:"GapFinderProcessArrays"                                  6         0.002515    0.002515    0.7646    0.7646    0           
+  mlugridbuilder.cpp:184:"BuildGridOnce"                                        6         0.2885      0.000248    87.72     0.0754    0           
+    mlugridbuilder.cpp:185:"BuildCartesianGridOnce"                             6         0.04207     0.04207     12.79     12.79     0           
+    mlugridbuilder.cpp:228:"GenerateComputationalCells"                         6         0.2462      0.1489      74.85     45.26     0           
+      mlugridbuilder.cpp:369:"ProcessGeometryPlanes"                            1152      0.04046     0.04046     12.3      12.3      0           
+      targetsizemap.cpp:27:"CreateTargetSizeMap"                                96        0.01192     0.01192     3.624     3.624     0           
+      mlugridbuilder.cpp:432:"ProcessGapBounds"                                 6         0.01076     0.01076     3.272     3.272     0           
+      mlugridbuilder.cpp:503:"MarkAcceptedCells"                                6         0.008563    0.008563    2.603     2.603     0           
+      mlugridbuilder.cpp:526:"RestrictCoarseningRatio"                          6         0.02565     0.02565     7.8       7.798     0           
+        mlugridbuilder.cpp:573:"RefineCellStack"                                33        6.8e-06     6.8e-06     0.002067  0.002067  0           
+  mlugridbuilder.cpp:104:"DeleteMLGrid"                                         5         7.08e-05    7.08e-05    0.02152   0.02152   0           
+  mlugridbuilder.cpp:133:"SetConnectivity"                                      1         0.02662     0.0002278   8.094     0.06926   4           
+    levelgridcntrl.cpp:1313:"SetLevelIndices"                                   1         0.001135    0.001135    0.345     0.345     0           
+    levelgridcntrl.cpp:1297:"SetCellPositions"                                  1         0.002091    0.0006406   0.6356    0.1948    1           
+      levelgridcntrl.cpp:1260:"ClearCellPositions"                              1         5e-07       5e-07       0.000152  0.000152  0           
+      levelgridcntrl.cpp:1272:"SortCellPositions"                               1         0.00145     0.00145     0.4407    0.4407    0           
+    levelgridcntrl.cpp:1336:"SetFaceToCellConnectivity"                         1         0.02104     0.0009205   6.397     0.2799    0           
+      levelgridcntrl.cpp:1342:"CreateFaces"                                     1         0.01502     0.01502     4.567     4.567     1           
+      levelgridcntrl.cpp:1407:"SortFaces"                                       1         0.005101    0.005101    1.551     1.551     0           
+    levelgridcntrl.cpp:1523:"SetCellToFaceConnectivity"                         1         0.002128    0.002128    0.6469    0.6469    2           
+  mlugridbuilder.cpp:143:"SetGeometry"                                          1         4.13e-05    4.13e-05    0.01256   0.01256   0           
+  mlugridbuilder.cpp:153:"SetFullCellToFaceConnectivity"                        1         0.0006611   0.0006611   0.201     0.201     0           

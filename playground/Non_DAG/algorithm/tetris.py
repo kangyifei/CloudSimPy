@@ -1,5 +1,5 @@
 import numpy as np
-from core.alogrithm import Algorithm
+from core.algorithm import Algorithm
 
 
 class Tetris(Algorithm):
@@ -13,7 +13,6 @@ class Tetris(Algorithm):
             machine_features.append(machine.feature[:2])
             task_features.append([task.task_config.cpu, task.task_config.memory])
         return np.argmax(np.sum(np.array(machine_features) * np.array(task_features), axis=1), axis=0)
-
     def __call__(self, cluster, clock):
         machines = cluster.machines
         tasks = cluster.tasks_which_has_waiting_instance

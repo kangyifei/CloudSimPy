@@ -235,10 +235,9 @@ class TaskInstance(object):
         # self.cluster.running_tasks.append(self)
         # self.machine.run(self)
         yield self.env.timeout(self.duration)
-
+        # print("one task finished")
         self.finished = True
         self.finished_timestamp = self.env.now
-
         self.machine.stop_task_instance(self)
 
     def schedule(self, machine):

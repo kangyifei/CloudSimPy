@@ -1,12 +1,12 @@
 import numpy as np
-from core.alogrithm import Algorithm
+from core.algorithm import Algorithm
 
 
-class RandomAlgorithm(Algorithm):
+class RandomTaskalgorithm(Algorithm):
     def __init__(self, threshold=0.8):
         self.threshold = threshold
 
-    def __call__(self, cluster, clock):
+    def __call__(self, cluster, clock, cooling_equipment=None):
         machines = cluster.machines
         tasks = cluster.tasks_which_has_waiting_instance
         candidate_task = None
@@ -22,9 +22,11 @@ class RandomAlgorithm(Algorithm):
                         candidate_task = task
                         break
         if len(all_candidates) == 0:
-            return None, None
+            return None, None, None
         if candidate_task is None:
             pair_index = np.random.randint(0, len(all_candidates))
-            return all_candidates[pair_index]
+            machine = all_candidates[pair_index][0]
+            task = all_candidates[pair_index][1]
+            return machine, task, None
         else:
-            return candidate_machine, candidate_task
+            return candidate_machine, candidate_task, None

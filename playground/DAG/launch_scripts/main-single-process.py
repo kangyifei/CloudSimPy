@@ -8,10 +8,10 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = '3'
 sys.path.append('..')
 
 from core.machine import MachineConfig
-from playground.DAG.algorithm.heuristics.random_algorithm import RandomAlgorithm
+from playground.DAG.algorithm.heuristics.random_algorithm import RandomTaskalgorithm
 from playground.DAG.algorithm.heuristics.tetris import Tetris
-from playground.DAG.algorithm.heuristics.first_fit import FirstFitAlgorithm
-from playground.DAG.algorithm.heuristics.max_weight import MaxWeightAlgorithm
+from playground.DAG.algorithm.heuristics.first_fit import FirstFitTaskalgorithm
+from playground.DAG.algorithm.heuristics.max_weight import MaxWeightTaskalgorithm
 
 from playground.DAG.algorithm.DeepJS.DRL import RLAlgorithm
 from playground.DAG.algorithm.DeepJS.agent import Agent
@@ -53,7 +53,7 @@ csv_reader = CSVReader(jobs_csv)
 jobs_configs = csv_reader.generate(0, jobs_len)
 
 tic = time.time()
-algorithm = RandomAlgorithm()
+algorithm = RandomTaskalgorithm()
 episode = Episode(machine_configs, jobs_configs, algorithm, None)
 episode.run()
 print('RandomAlgorithm')
@@ -67,14 +67,14 @@ print('Tetris')
 print(episode.env.now, time.time() - tic, average_completion(episode), average_slowdown(episode))
 
 tic = time.time()
-algorithm = FirstFitAlgorithm()
+algorithm = FirstFitTaskalgorithm()
 episode = Episode(machine_configs, jobs_configs, algorithm, None)
 episode.run()
 print('FirstFitAlgorithm')
 print(episode.env.now, time.time() - tic, average_completion(episode), average_slowdown(episode))
 
 tic = time.time()
-algorithm = MaxWeightAlgorithm()
+algorithm = MaxWeightTaskalgorithm()
 episode = Episode(machine_configs, jobs_configs, algorithm, None)
 episode.run()
 print('MaxWeightAlgorithm')

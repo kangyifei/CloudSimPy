@@ -1,0 +1,1483 @@
+6SigmaDC Project File. Version: 1. File type: ObjectResults
+RegionAttribute Results
+FixFlow 104 12
+  FixFlow
+  FlowRate= 2.4
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 2.4
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 2.4
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -7.2
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936919
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936919
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0937562
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0937562
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936892
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936892
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936987
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936987
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.094247
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.094247
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0938545
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0938545
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0939702
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0939702
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936567
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936567
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0937259
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0937259
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0941088
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0941088
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0947468
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0947468
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0938011
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0938011
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0940237
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0940237
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0937331
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0937331
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0938718
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0938718
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0943012
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0943012
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0950091
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0950091
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0937162
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0937162
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0939451
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0939451
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936549
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936549
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0937481
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0937481
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0941317
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0941317
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0947162
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0947162
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0937519
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0937519
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0939275
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0939275
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0938803
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0938803
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936636
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936636
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0940016
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0940016
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+Heat 51 45
+  Heat
+  CurrentValue= -80107.9
+  CoilTemperature= 18.9754
+  NCoilDivisions= 100
+ 23.026 22.93 22.8344 22.7392 22.6446 22.5505 22.4568 22.3636 22.2709 22.1787 22.087 21.9957 21.9049 21.8145 21.7246 21.6352 21.5462 21.4577 21.3697 21.2821 21.1949 21.1082 21.0219 20.9361 20.8507 20.7657 20.6812 20.5971 20.5135 20.4303 20.3475 20.2651 20.1831 20.1016 20.0205 19.9398 19.8595 19.7796 19.7002 19.6211 19.5425 19.4642 19.3864 19.3089 19.2318 19.1552 19.0789 19.003 18.9276 18.8525 18.7777 18.7034 18.6294 18.5559 18.4827 18.4098 18.3374 18.2653 18.1936 18.1223 18.0513 17.9807 17.9104 17.8405 17.771 17.7018 17.633 17.5645 17.4964 17.4286 17.3612 17.2941 17.2274 17.161 17.0949 17.0292 16.9638 16.8988 16.8341 16.7697 16.7056 16.6419 16.5785 16.5154 16.4527 16.3902 16.3281 16.2663 16.2049 16.1437 16.0829 16.0223 15.9621 15.9022 15.8426 15.7833 15.7243 15.6656 15.6072 15.5491
+  AirFlowRate= 0
+  AirInTemperature= 0
+  CoilAirOnTemperature= 0
+  AirOutTemperature= 0
+  IndirectCooling= 0
+  MechanicalCooling= 0
+  HeatToCoolant= 0
+  NetCooling= 0
+  FanPower= 3000
+  HeatDissipation= 3000
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.931
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9172
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9033
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9484
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9839
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0194
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9915
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9635
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.8738
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.1926
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.5198
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.4345
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.3492
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.1448
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.1424
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.1401
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0702
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0003
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.8349
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.1092
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.6618
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.584
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.5061
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.2624
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.2492
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.236
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.1579
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0799
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.8981
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.2003
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.7667
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.6902
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.6136
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.351
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.3338
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.3167
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.2403
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.1638
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9963
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.2824
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0483
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0187
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9892
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 35.9805
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0029
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0253
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0245
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0238
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.0065
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 36.382
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+FaceResistance 41 7
+  FaceResistance
+  OperatingOpenArea= 0.00166667
+  FaceResistance
+  OperatingOpenArea= 0.5
+  FaceResistance
+  OperatingOpenArea= 0.5
+  FaceResistance
+  OperatingOpenArea= 0.5
+  FaceResistance
+  OperatingOpenArea= 0.5
+  FaceResistance
+  OperatingOpenArea= 0.5
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+Sensor 102 9
+  Average Supply Air
+    CurrentValue= 18
+  Average Return Air
+    CurrentValue= 27.3032
+  front10
+    CurrentValue= 18.1187
+  front9
+    CurrentValue= 18.1187
+  front8
+    CurrentValue= 18.0923
+  front7
+    CurrentValue= 18.1253
+  front6
+    CurrentValue= 18.1253
+  front5
+    CurrentValue= 18.461
+  front4
+    CurrentValue= 18.1518
+  front3
+    CurrentValue= 18.1518
+  front2
+    CurrentValue= 18.1332
+  front1
+    CurrentValue= 18.1332
+  back10
+    CurrentValue= 32.6206
+  back01
+    CurrentValue= 32.3639
+  back02
+    CurrentValue= 32.3639
+  back03
+    CurrentValue= 32.336
+  back04
+    CurrentValue= 32.3737
+  back05
+    CurrentValue= 32.3737
+  back06
+    CurrentValue= 32.4548
+  back07
+    CurrentValue= 32.3887
+  back08
+    CurrentValue= 32.3887
+  back09
+    CurrentValue= 32.3162
+  front11
+    CurrentValue= 18.7452
+  front12
+    CurrentValue= 18.7452
+  front13
+    CurrentValue= 18.4309
+  front14
+    CurrentValue= 18.3163
+  front15
+    CurrentValue= 18.3163
+  front16
+    CurrentValue= 18.3666
+  front17
+    CurrentValue= 18.1651
+  front18
+    CurrentValue= 18.1651
+  front19
+    CurrentValue= 18.1425
+  front20
+    CurrentValue= 18.1425
+  back11
+    CurrentValue= 32.5372
+  back12
+    CurrentValue= 32.9608
+  back13
+    CurrentValue= 32.9608
+  back14
+    CurrentValue= 32.7741
+  back15
+    CurrentValue= 32.584
+  back16
+    CurrentValue= 32.584
+  back17
+    CurrentValue= 32.5716
+  back18
+    CurrentValue= 32.4364
+  back19
+    CurrentValue= 32.4364
+  back20
+    CurrentValue= 32.2972
+  front21
+    CurrentValue= 19.0864
+  front22
+    CurrentValue= 19.0864
+  front23
+    CurrentValue= 18.7728
+  front24
+    CurrentValue= 18.6022
+  front25
+    CurrentValue= 18.6022
+  front26
+    CurrentValue= 18.5142
+  front27
+    CurrentValue= 18.3653
+  front28
+    CurrentValue= 18.3653
+  front29
+    CurrentValue= 18.3132
+  front30
+    CurrentValue= 18.3132
+  back21
+    CurrentValue= 32.6284
+  back22
+    CurrentValue= 33.1021
+  back23
+    CurrentValue= 33.1021
+  back24
+    CurrentValue= 32.9298
+  back25
+    CurrentValue= 32.7054
+  back26
+    CurrentValue= 32.7054
+  back27
+    CurrentValue= 32.6678
+  back28
+    CurrentValue= 32.5235
+  back29
+    CurrentValue= 32.5235
+  back30
+    CurrentValue= 32.3696
+  front31
+    CurrentValue= 19.2319
+  front32
+    CurrentValue= 19.2319
+  front33
+    CurrentValue= 18.8746
+  front34
+    CurrentValue= 18.6772
+  front35
+    CurrentValue= 18.6772
+  front36
+    CurrentValue= 18.6204
+  front37
+    CurrentValue= 18.4316
+  front38
+    CurrentValue= 18.4316
+  front39
+    CurrentValue= 18.3637
+  front40
+    CurrentValue= 18.3637
+  back31
+    CurrentValue= 32.7105
+  back32
+    CurrentValue= 33.2075
+  back33
+    CurrentValue= 33.2075
+  back34
+    CurrentValue= 33.0346
+  back35
+    CurrentValue= 32.7911
+  back36
+    CurrentValue= 32.7911
+  back37
+    CurrentValue= 32.7475
+  back38
+    CurrentValue= 32.6007
+  back39
+    CurrentValue= 32.6007
+  back40
+    CurrentValue= 32.4573
+  front41
+    CurrentValue= 18.4595
+  front42
+    CurrentValue= 18.4595
+  front43
+    CurrentValue= 18.2922
+  front44
+    CurrentValue= 18.224
+  front45
+    CurrentValue= 18.224
+  front46
+    CurrentValue= 18.2493
+  front47
+    CurrentValue= 18.2232
+  front48
+    CurrentValue= 18.2232
+  front49
+    CurrentValue= 18.2164
+  front50
+    CurrentValue= 18.2164
+  back41
+    CurrentValue= 32.8101
+  back42
+    CurrentValue= 32.482
+  back43
+    CurrentValue= 32.482
+  back44
+    CurrentValue= 32.424
+  back45
+    CurrentValue= 32.4138
+  back46
+    CurrentValue= 32.4138
+  back47
+    CurrentValue= 32.4541
+  back48
+    CurrentValue= 32.4526
+  back49
+    CurrentValue= 32.4526
+  back50
+    CurrentValue= 32.4383
+CurveControl 151 8
+  CurveControl
+    ControlValue= 27.3031
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+CurveArrayControl 50 8
+  CurveArrayControl
+    ArrayValue= 18.0955
+    CurveValue= 0.0391245
+  CurveArrayControl
+    ArrayValue= 18.0812
+    CurveValue= -0.327502
+  CurveArrayControl
+    ArrayValue= 18.0669
+    CurveValue= -0.694127
+  CurveArrayControl
+    ArrayValue= 18.0745
+    CurveValue= -0.312323
+  CurveArrayControl
+    ArrayValue= 18.1354
+    CurveValue= 1.57521
+  CurveArrayControl
+    ArrayValue= 18.1963
+    CurveValue= 3.46275
+  CurveArrayControl
+    ArrayValue= 18.1427
+    CurveValue= 1.54829
+  CurveArrayControl
+    ArrayValue= 18.0892
+    CurveValue= -0.366174
+  CurveArrayControl
+    ArrayValue= 18.0854
+    CurveValue= -3.49006
+  CurveArrayControl
+    ArrayValue= 18.3327
+    CurveValue= 10.5958
+  CurveArrayControl
+    ArrayValue= 18.7246
+    CurveValue= 1.58039
+  CurveArrayControl
+    ArrayValue= 18.5991
+    CurveValue= 0.163239
+  CurveArrayControl
+    ArrayValue= 18.4735
+    CurveValue= -1.25391
+  CurveArrayControl
+    ArrayValue= 18.3408
+    CurveValue= -1.9134
+  CurveArrayControl
+    ArrayValue= 18.3194
+    CurveValue= -0.126891
+  CurveArrayControl
+    ArrayValue= 18.2979
+    CurveValue= 1.65962
+  CurveArrayControl
+    ArrayValue= 18.2394
+    CurveValue= -0.521526
+  CurveArrayControl
+    ArrayValue= 18.1809
+    CurveValue= -2.70267
+  CurveArrayControl
+    ArrayValue= 18.1464
+    CurveValue= -6.33786
+  CurveArrayControl
+    ArrayValue= 18.2495
+    CurveValue= 7.27673
+  CurveArrayControl
+    ArrayValue= 18.8632
+    CurveValue= 2.76478
+  CurveArrayControl
+    ArrayValue= 18.7438
+    CurveValue= 0.907616
+  CurveArrayControl
+    ArrayValue= 18.6244
+    CurveValue= -0.949548
+  CurveArrayControl
+    ArrayValue= 18.4777
+    CurveValue= -2.218
+  CurveArrayControl
+    ArrayValue= 18.4364
+    CurveValue= -0.562224
+  CurveArrayControl
+    ArrayValue= 18.3951
+    CurveValue= 1.09355
+  CurveArrayControl
+    ArrayValue= 18.3466
+    CurveValue= -1.3526
+  CurveArrayControl
+    ArrayValue= 18.298
+    CurveValue= -3.79876
+  CurveArrayControl
+    ArrayValue= 18.2556
+    CurveValue= -7.83236
+  CurveArrayControl
+    ArrayValue= 18.3409
+    CurveValue= 5.70679
+  CurveArrayControl
+    ArrayValue= 18.9706
+    CurveValue= 3.28806
+  CurveArrayControl
+    ArrayValue= 18.8446
+    CurveValue= 1.41111
+  CurveArrayControl
+    ArrayValue= 18.7186
+    CurveValue= -0.465848
+  CurveArrayControl
+    ArrayValue= 18.5518
+    CurveValue= -1.7703
+  CurveArrayControl
+    ArrayValue= 18.5113
+    CurveValue= -0.116593
+  CurveArrayControl
+    ArrayValue= 18.4707
+    CurveValue= 1.53711
+  CurveArrayControl
+    ArrayValue= 18.4094
+    CurveValue= -0.648079
+  CurveArrayControl
+    ArrayValue= 18.348
+    CurveValue= -2.83326
+  CurveArrayControl
+    ArrayValue= 18.3017
+    CurveValue= -6.16312
+  CurveArrayControl
+    ArrayValue= 18.4229
+    CurveValue= 7.54571
+  CurveArrayControl
+    ArrayValue= 18.2166
+    CurveValue= 0.331138
+  CurveArrayControl
+    ArrayValue= 18.19
+    CurveValue= -0.669394
+  CurveArrayControl
+    ArrayValue= 18.1635
+    CurveValue= -1.66993
+  CurveArrayControl
+    ArrayValue= 18.147
+    CurveValue= -1.40112
+  CurveArrayControl
+    ArrayValue= 18.1583
+    CurveValue= 0.821523
+  CurveArrayControl
+    ArrayValue= 18.1696
+    CurveValue= 3.04416
+  CurveArrayControl
+    ArrayValue= 18.1688
+    CurveValue= 1.43874
+  CurveArrayControl
+    ArrayValue= 18.168
+    CurveValue= -0.166677
+  CurveArrayControl
+    ArrayValue= 18.1656
+    CurveValue= -2.09233
+  CurveArrayControl
+    ArrayValue= 18.5227
+    CurveValue= 12.1896
+Controller 1 31
+    CurrentError= 1.90735e-06 
+    CurrentGain= 13.9359 
+    CurrentOutput= 0.667576 
+EndRegionAttributes
+EndData

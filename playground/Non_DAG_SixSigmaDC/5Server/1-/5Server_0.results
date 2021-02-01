@@ -1,0 +1,331 @@
+6SigmaDC Project File. Version: 1. File type: ObjectResults
+RegionAttribute Results
+FixFlow 22 12
+  FixFlow
+  FlowRate= 1.8
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -1.8
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= 0.0936344
+  FlowRatio= 1
+  DmDp= 0
+  FixFlow
+  FlowRate= -0.0936344
+  FlowRatio= 1
+  DmDp= 0
+Heat 11 45
+  Heat
+  CurrentValue= -0.0123179
+  CoilTemperature= 19.9992
+  NCoilDivisions= 100
+ 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 19.9999 19.9998 19.9997 19.9994 19.9988 19.9975 19.995 19.9901 19.9801 19.9603
+  AirFlowRate= 0
+  AirInTemperature= 0
+  CoilAirOnTemperature= 0
+  AirOutTemperature= 0
+  IndirectCooling= 0
+  MechanicalCooling= 0
+  HeatToCoolant= 0
+  NetCooling= 0
+  FanPower= 50000
+  HeatDissipation= 50000
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+  Heat
+  CurrentValue= 1600
+  EffectiveTemperature= 20
+  LiquidHeatDissipation= 0
+  LiquidTemperatureIn= 0
+  LiquidFlowRate= 0
+FaceResistance 9 7
+  FaceResistance
+  OperatingOpenArea= 0.00166667
+  FaceResistance
+  OperatingOpenArea= 0.5
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.64
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+  FaceResistance
+  OperatingOpenArea= 0.05
+Sensor 22 9
+  Average Supply Air
+    CurrentValue= 20
+  Average Return Air
+    CurrentValue= 20
+  front10
+    CurrentValue= 20
+  front9
+    CurrentValue= 20
+  front8
+    CurrentValue= 20
+  front7
+    CurrentValue= 20
+  front6
+    CurrentValue= 20
+  front5
+    CurrentValue= 20
+  front4
+    CurrentValue= 20
+  front3
+    CurrentValue= 20
+  front2
+    CurrentValue= 20
+  front1
+    CurrentValue= 20
+  back10
+    CurrentValue= 20
+  back01
+    CurrentValue= 20
+  back02
+    CurrentValue= 20
+  back03
+    CurrentValue= 20
+  back04
+    CurrentValue= 20
+  back05
+    CurrentValue= 20
+  back06
+    CurrentValue= 20
+  back07
+    CurrentValue= 20
+  back08
+    CurrentValue= 20
+  back09
+    CurrentValue= 20
+CurveControl 31 8
+  CurveControl
+    ControlValue= 20
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 1
+  CurveControl
+    ControlValue= 0
+  CurveControl
+    ControlValue= 1
+CurveArrayControl 10 8
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+  CurveArrayControl
+    ArrayValue= 20
+    CurveValue= 0
+Controller 1 31
+    CurrentError= 2 
+    CurrentGain= 13.9359 
+    CurrentOutput= 0.143514 
+EndRegionAttributes
+EndData
