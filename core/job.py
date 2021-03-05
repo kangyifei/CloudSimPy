@@ -59,6 +59,8 @@ class Task(object):
     def start_task_instance(self, machine):
         self.task_instances[self.next_instance_pointer].schedule(machine)
         self.next_instance_pointer += 1
+        if not self.has_waiting_task_instances:
+            self.job.mark_task_finished(self)
 
     @property
     def started(self):
@@ -120,6 +122,9 @@ class Job(object):
             task_index = task_config.task_index
             self.tasks_map[task_index] = Job.task_cls(env, self, task_config)
 
+    def attach(self, cluster):
+        self.cluster = cluster
+
     @property
     def tasks(self):
         return self.tasks_map.values()
@@ -139,6 +144,9 @@ class Job(object):
             if not task.finished and task.ready:
                 ls.append(task)
         return ls
+
+    def mark_task_finished(self, task):
+        self.cluster.unfinished_tasks_new.pop(hash(task))
 
     @property
     def tasks_which_has_waiting_instance(self):
@@ -235,7 +243,7 @@ class TaskInstance(object):
         # self.cluster.running_tasks.append(self)
         # self.machine.run(self)
         yield self.env.timeout(self.duration)
-
+        # print("one task finished")
         self.finished = True
         self.finished_timestamp = self.env.now
         self.machine.stop_task_instance(self)

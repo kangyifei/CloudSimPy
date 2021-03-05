@@ -1,0 +1,5756 @@
+<Intrinsic-SolverExchangeVersion> 3 </Intrinsic-SolverExchangeVersion>
+<SolverExchangeCntrl>
+<Intrinsic-Active> 1 </Intrinsic-Active>
+<Linkers> <LinkerContainer>
+<Intrinsic-#Interfaces> 1 </Intrinsic-#Interfaces>
+<InterfaceType-string>
+<Intrinsic-size> 13 </Intrinsic-size>
+<data>
+"CSVDataParser"
+</data>
+</InterfaceType-string>
+<CSVDataParser>
+<SolverExchangeDirectory-string>
+<Intrinsic-size> 74 </Intrinsic-size>
+<data>
+"D:\code\CloudSimPy\playground\Non_DAG_SixSigmaDC\5Server/1-/SolverExchange"
+</data>
+</SolverExchangeDirectory-string>
+<Enum-FileMode> 1 </Enum-FileMode>
+<Intrinsic-InFileTryAttemps> 20 </Intrinsic-InFileTryAttemps>
+<Enum-SyncMode> 20 </Enum-SyncMode>
+</CSVDataParser>
+</LinkerContainer>
+ </Linkers>
+<Entities> <EntityContainer>
+<Intrinsic-#Entities> 37 </Intrinsic-#Entities>
+<EntityType-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Project"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 16 </Intrinsic-size>
+<data>
+"Virtual Facility"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 16 </Intrinsic-size>
+<data>
+"Virtual Facility"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 0 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 1 </Intrinsic-numChildren>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<EntityType-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"SolutionControl"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 16 </Intrinsic-size>
+<data>
+"Solution Control"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 34 </Intrinsic-size>
+<data>
+"Virtual Facility->Solution Control"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 0 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 11 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 3 </Intrinsic-size>
+<data>
+"Int"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 9 </Intrinsic-size>
+<data>
+"Iteration"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 2 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 4 </Intrinsic-size>
+<data>
+"Time"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"s"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 3 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 3 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 3 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 8 </Intrinsic-size>
+<data>
+"TimeStep"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"s"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 4 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 4 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 4 </Intrinsic-size>
+<data>
+"Bool"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 4 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"IsTransient"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 5 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 4 </Intrinsic-size>
+<data>
+"Bool"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 5 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 10 </Intrinsic-size>
+<data>
+"IsParallel"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 5 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 6 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 3 </Intrinsic-size>
+<data>
+"Int"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 6 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 9 </Intrinsic-size>
+<data>
+"ProcessID"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 7 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 7 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 3 </Intrinsic-size>
+<data>
+"Int"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 7 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 17 </Intrinsic-size>
+<data>
+"NumberOfProcesses"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 6 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 9 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 12 </Intrinsic-size>
+<data>
+"Execute_Bool"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 9 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 16 </Intrinsic-size>
+<data>
+"CheckIfCancelled"
+</data>
+</Name-string>
+<Enum-AccessType> 2 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<ExecuteOperator> <TransformedExecute>
+<Execute> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 8 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </Execute>
+</TransformedExecute>
+ </ExecuteOperator>
+<Enum-AttributeType> 10 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 18 </Intrinsic-size>
+<data>
+"Execute_VoidString"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"MessageUser"
+</data>
+</Name-string>
+<Enum-AccessType> 2 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<ExecuteOperator> <TransformedExecute>
+<Execute> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 9 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </Execute>
+</TransformedExecute>
+ </ExecuteOperator>
+<Enum-AttributeType> 11 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 12 </Intrinsic-size>
+<data>
+"Execute_Void"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 11 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"ParallelBarrier"
+</data>
+</Name-string>
+<Enum-AccessType> 2 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<ExecuteOperator> <TransformedExecute>
+<Execute> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </Execute>
+</TransformedExecute>
+ </ExecuteOperator>
+<Enum-AttributeType> 12 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 12 </Intrinsic-size>
+<data>
+"Execute_Void"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"CancelSolve"
+</data>
+</Name-string>
+<Enum-AccessType> 2 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 1 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<ExecuteOperator> <TransformedExecute>
+<Execute> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 11 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </Execute>
+</TransformedExecute>
+ </ExecuteOperator>
+<EntityType-string>
+<Intrinsic-size> 3 </Intrinsic-size>
+<data>
+"ACU"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"ACU01"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 50 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->ACU01"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 3 </Intrinsic-numChildren>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 3 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 4 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 5 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<Intrinsic-NumberOfAttributes> 5 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 8 </Intrinsic-size>
+<data>
+"FanSpeed"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 2 </Intrinsic-NumSetValues>
+<SetValue> <TransformedSetValue>
+<Intrinsic-HasTransformation> 1 </Intrinsic-HasTransformation>
+<TransformationType-string>
+<Intrinsic-size> 27 </Intrinsic-size>
+<data>
+"SimpleScalingTransformation"
+</data>
+</TransformationType-string>
+<SimpleScalingTransformation>
+<FP-OffSet>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataOffSet> 0 </dataOffSet>
+</FP-OffSet>
+<FP-Scaling>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataScaling> 0.00999999978 </dataScaling>
+</FP-Scaling>
+</SimpleScalingTransformation>
+<SetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 30 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </SetValue>
+</TransformedSetValue>
+ </SetValue>
+<SetValue> <TransformedSetValue>
+<Intrinsic-HasTransformation> 1 </Intrinsic-HasTransformation>
+<TransformationType-string>
+<Intrinsic-size> 22 </Intrinsic-size>
+<data>
+"PowerLawTransformation"
+</data>
+</TransformationType-string>
+<PowerLawTransformation>
+<FP-OffSet>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataOffSet> 0 </dataOffSet>
+</FP-OffSet>
+<FP-Scaling>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataScaling> 9.99999997e-07 </dataScaling>
+</FP-Scaling>
+<FP-Power>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataPower> 3 </dataPower>
+</FP-Power>
+</PowerLawTransformation>
+<SetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 30 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </SetValue>
+</TransformedSetValue>
+ </SetValue>
+<Enum-AttributeType> 2 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 20 </Intrinsic-size>
+<data>
+"CoolantTemperatureIn"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 1 </Intrinsic-NumSetValues>
+<SetValue> <TransformedSetValue>
+<Intrinsic-HasTransformation> 1 </Intrinsic-HasTransformation>
+<TransformationType-string>
+<Intrinsic-size> 27 </Intrinsic-size>
+<data>
+"SimpleScalingTransformation"
+</data>
+</TransformationType-string>
+<SimpleScalingTransformation>
+<FP-OffSet>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataOffSet> -12 </dataOffSet>
+</FP-OffSet>
+<FP-Scaling>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataScaling> 1 </dataScaling>
+</FP-Scaling>
+</SimpleScalingTransformation>
+<SetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 30 </Intrinsic-item>
+<Intrinsic-item> 3 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </SetValue>
+</TransformedSetValue>
+ </SetValue>
+<Enum-AttributeType> 3 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 3 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 21 </Intrinsic-size>
+<data>
+"CoolantTemperatureOut"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 12 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 6 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 4 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 4 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"CoolantFlowRate"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"m^3/s"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 6 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 5 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 5 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 22 </Intrinsic-size>
+<data>
+"CoolantMaximumFlowRate"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0.00144999998 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"m^3/s"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 1 </Intrinsic-NumSetValues>
+<SetValue> <TransformedSetValue>
+<Intrinsic-HasTransformation> 1 </Intrinsic-HasTransformation>
+<TransformationType-string>
+<Intrinsic-size> 27 </Intrinsic-size>
+<data>
+"SimpleScalingTransformation"
+</data>
+</TransformationType-string>
+<SimpleScalingTransformation>
+<FP-OffSet>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataOffSet> 0 </dataOffSet>
+</FP-OffSet>
+<FP-Scaling>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataScaling> 689.655151 </dataScaling>
+</FP-Scaling>
+</SimpleScalingTransformation>
+<SetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 30 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </SetValue>
+</TransformedSetValue>
+ </SetValue>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 18 </Intrinsic-size>
+<data>
+"Average Supply Air"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 70 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->ACU01->Average Supply Air"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 3 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 3 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 3 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 10 </Intrinsic-size>
+<data>
+"Controller"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 26 </Intrinsic-size>
+<data>
+"Air Temperature Controller"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 78 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->ACU01->Air Temperature Controller"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 4 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 6 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 4 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Output"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 4 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 1 </Intrinsic-HasTransformation>
+<TransformationType-string>
+<Intrinsic-size> 27 </Intrinsic-size>
+<data>
+"SimpleScalingTransformation"
+</data>
+</TransformationType-string>
+<SimpleScalingTransformation>
+<FP-OffSet>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataOffSet> 0 </dataOffSet>
+</FP-OffSet>
+<FP-Scaling>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataScaling> 100 </dataScaling>
+</FP-Scaling>
+</SimpleScalingTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 2 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 4 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"InputSignal"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 4 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 0 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 5 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 3 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 4 </Intrinsic-item>
+<Intrinsic-item> 3 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 8 </Intrinsic-size>
+<data>
+"SetPoint"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 4 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 18 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 18 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 18 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 18 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 18 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 3 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 1 </Intrinsic-NumSetValues>
+<SetValue> <TransformedSetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<SetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 3 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </SetValue>
+</TransformedSetValue>
+ </SetValue>
+<Enum-AttributeType> 4 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 4 </Intrinsic-item>
+<Intrinsic-item> 4 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 8 </Intrinsic-size>
+<data>
+"DeadBand"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 4 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 4 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 1 </Intrinsic-NumSetValues>
+<SetValue> <TransformedSetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<SetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 4 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </SetValue>
+</TransformedSetValue>
+ </SetValue>
+<Enum-AttributeType> 5 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 4 </Intrinsic-item>
+<Intrinsic-item> 5 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 4 </Intrinsic-size>
+<data>
+"Gain"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 4 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 13.9358997 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 13.9358997 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 13.9358997 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 13.9358997 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 13.9358997 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<Enum-AttributeType> 6 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 4 </Intrinsic-item>
+<Intrinsic-item> 6 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 17 </Intrinsic-size>
+<data>
+"GainScalingFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 4 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 1 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 1 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 1 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 1 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 1 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 0 </Intrinsic-item>
+<Intrinsic-item> 7 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<ControllerFunctor> <FunctorLink>
+<LibraryName-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</LibraryName-string>
+<Enum-FunctorType> 0 </Enum-FunctorType>
+<FunctorDefinitionName-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</FunctorDefinitionName-string>
+<FunctorState-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</FunctorState-string>
+</FunctorLink>
+ </ControllerFunctor>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 18 </Intrinsic-size>
+<data>
+"Average Return Air"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 70 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->ACU01->Average Return Air"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 5 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 2 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 5 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 5 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Cabinet"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 2 </Intrinsic-size>
+<data>
+"D5"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 47 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 20 </Intrinsic-numChildren>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 17 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 18 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 19 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 20 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 21 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 22 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 23 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 24 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 25 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 26 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 27 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 28 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 29 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 30 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 31 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 32 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 33 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 34 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 35 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<child> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 36 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </child>
+<Intrinsic-NumberOfAttributes> 0 </Intrinsic-NumberOfAttributes>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 8 </Intrinsic-size>
+<data>
+"Server10"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 87 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 1->Server10"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 7 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 7 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 7 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server9"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 86 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 5->Server9"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 8 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 8 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 8 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 5 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server8"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 86 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 9->Server8"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 9 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 9 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 9 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 8 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server7"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 87 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 13->Server7"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 10 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 10 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 11 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server6"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 87 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 17->Server6"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 11 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 11 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 11 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 14 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server5"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 87 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 21->Server5"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 12 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 12 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 17 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server4"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 87 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 25->Server4"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 13 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 13 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 13 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 20 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server3"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 87 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 29->Server3"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 14 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 14 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 14 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 23 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server2"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 87 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 33->Server2"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 15 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 15 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 15 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 26 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 11 </Intrinsic-size>
+<data>
+"ITEquipment"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"Server1"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 87 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->Simple Mounting Rail->Slot 37->Server1"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 16 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 0 </Intrinsic-IDSet>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 16 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 15 </Intrinsic-size>
+<data>
+"HeatPowerFactor"
+</data>
+</Name-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 16 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> 100 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"%"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 29 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 7 </Intrinsic-size>
+<data>
+"front10"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 56 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front10"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 17 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 17 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 17 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 2 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front9"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front9"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 18 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 18 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 18 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 3 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front8"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front8"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 19 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 19 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 4 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front7"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front7"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 20 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 20 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 20 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 5 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front6"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front6"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 21 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 21 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 21 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 6 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front5"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front5"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 22 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 22 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 22 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 7 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front4"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front4"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 23 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 23 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 23 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 8 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front3"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front3"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 24 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 24 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 24 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 9 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front2"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front2"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 25 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 25 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 25 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"front1"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->front1"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 26 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 26 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 26 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 11 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back10"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back10"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 27 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 27 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 27 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 12 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back01"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back01"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 28 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 28 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 28 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 13 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back02"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back02"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 29 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 29 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 29 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 14 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back03"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back03"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 30 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 30 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 30 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 15 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back04"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back04"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 31 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 31 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 31 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 16 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back05"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back05"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 32 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 32 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 32 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 17 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back06"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back06"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 33 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 33 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 33 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 18 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back07"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back07"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 34 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 34 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 34 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 19 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back08"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back08"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 35 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 35 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 35 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 20 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<EntityType-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"Sensor"
+</data>
+</EntityType-string>
+<Name-string>
+<Intrinsic-size> 6 </Intrinsic-size>
+<data>
+"back09"
+</data>
+</Name-string>
+<FullName-string>
+<Intrinsic-size> 55 </Intrinsic-size>
+<data>
+"Virtual Facility->Room->Floor->Raised Floor->D5->back09"
+</data>
+</FullName-string>
+<Enum-AccessType> 3 </Enum-AccessType>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 36 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+<Parent> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 6 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Parent>
+<Intrinsic-numChildren> 0 </Intrinsic-numChildren>
+<Intrinsic-NumberOfAttributes> 1 </Intrinsic-NumberOfAttributes>
+<Enum-AttributeType> 1 </Enum-AttributeType>
+<AttributeTypeName-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Float"
+</data>
+</AttributeTypeName-string>
+<ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 2 </Intrinsic-size>
+<Intrinsic-item> 36 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+<Name-string>
+<Intrinsic-size> 5 </Intrinsic-size>
+<data>
+"Value"
+</data>
+</Name-string>
+<Enum-AccessType> 1 </Enum-AccessType>
+<Owner> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 36 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </Owner>
+<Values> <ValueContainer>
+<Data-array>
+<Intrinsic-size> 5 </Intrinsic-size>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+<FP-item>
+<Intrinsic-Class> 0 </Intrinsic-Class>
+<Intrinsic-Precision> 9 </Intrinsic-Precision>
+<dataitem> -300 </dataitem>
+</FP-item>
+</Data-array>
+</ValueContainer>
+ </Values>
+<Unit-string>
+<Intrinsic-size> 1 </Intrinsic-size>
+<data>
+"C"
+</data>
+</Unit-string>
+<GetValue> <TransformedGetValue>
+<Intrinsic-HasTransformation> 0 </Intrinsic-HasTransformation>
+<GetValue> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<ID-array>
+<Intrinsic-size> 4 </Intrinsic-size>
+<Intrinsic-item> 1 </Intrinsic-item>
+<Intrinsic-item> 10 </Intrinsic-item>
+<Intrinsic-item> 21 </Intrinsic-item>
+<Intrinsic-item> 1 </Intrinsic-item>
+</ID-array>
+</IDContainer>
+ </ID>
+ </GetValue>
+</TransformedGetValue>
+ </GetValue>
+<Intrinsic-NumSetValues> 0 </Intrinsic-NumSetValues>
+<RootEntity> <ID> <IDContainer>
+<Intrinsic-IDSet> 1 </Intrinsic-IDSet>
+<Intrinsic-ID> 0 </Intrinsic-ID>
+</IDContainer>
+ </ID>
+ </RootEntity>
+</EntityContainer>
+ </Entities>
+<EventHandler> <FunctorLink>
+<LibraryName-string>
+<Intrinsic-size> 13 </Intrinsic-size>
+<data>
+"CSVDataParser"
+</data>
+</LibraryName-string>
+<Enum-FunctorType> 1 </Enum-FunctorType>
+<FunctorDefinitionName-string>
+<Intrinsic-size> 9 </Intrinsic-size>
+<data>
+"CSVParser"
+</data>
+</FunctorDefinitionName-string>
+<FunctorState-string>
+<Intrinsic-size> 0 </Intrinsic-size>
+</FunctorState-string>
+</FunctorLink>
+ </EventHandler>
+</SolverExchangeCntrl>

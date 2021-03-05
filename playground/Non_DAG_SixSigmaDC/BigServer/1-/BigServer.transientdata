@@ -1,0 +1,38 @@
+6SigmaDC Project File. Version: 2. File type: Transient Data
+
+Date 26/12/2020   Time 20:27:44
+
+Time steps analysed=2
+Number of Variable Control variables=8
+Temperature:
+    Overall min value= 1.79993e+01
+    Overall max value= 3.32075e+01
+    Overall mean value= 2.19150e+01
+KE:
+    Overall min value= 1.28148e-02
+    Overall max value= 3.92332e+01
+    Overall mean value= 1.05193e+00
+EP:
+    Overall min value= 4.92210e-03
+    Overall max value= 2.50983e+03
+    Overall mean value= 1.13111e+01
+X Velocity:
+    Overall min value=-1.13679e+01
+    Overall max value= 1.60658e+01
+    Overall mean value= 3.80981e-01
+Y Velocity:
+    Overall min value=-1.59044e+01
+    Overall max value= 8.75503e+00
+    Overall mean value= 1.73214e-01
+Z Velocity:
+    Overall min value=-1.93361e+01
+    Overall max value= 1.33556e+01
+    Overall mean value= 3.61782e-01
+Pressure:
+    Overall min value=-5.91467e+01
+    Overall max value= 3.67116e+02
+    Overall mean value= 3.42125e+01
+VelocityMagnitude:
+    Overall min value= 0.00000e+00
+    Overall max value= 1.93296e+01
+    Overall mean value= 2.26620e+00

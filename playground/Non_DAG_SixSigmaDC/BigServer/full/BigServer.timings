@@ -1,0 +1,13 @@
+6SigmaDC Project File. Version: 1. File type: Timings
+"Time:GridGeneration": 0.224909
+"Time:RegionBuilding": 0.875511
+"Time:SolutionDataInitialisation": 0.206254
+"Time:SolutionDataWriting": 0.0360729
+"Time:CFDGeometryBuilding": 0
+"Time:CumulativeCFDSolution": 57.3102
+"Time:DistributedDataCreation": 0.299621
+"Time:CFDSolution": 57.3102
+"Time:DistributedDataAssembly": 0.175436
+"Time:SolutionDataPostProcessing": 0.120914
+"CFDSolutionStartTime": Saturday 26 December 2020 [17:41:25]
+"CFDSolutionEndTime": Saturday 26 December 2020 [17:42:25]

@@ -1,0 +1,50 @@
+<<,START,CSV,VER00,>>
+EntityType,Name,Attribute,Value,Unit
+<<Control>>,<<Solution>>,Time,86,s
+<<Control>>,<<Solution>>,Iteration,0,
+<<Control>>,<<Solution>>,DataTime,85,s
+<<Control>>,<<Solution>>,DataIteration,3,
+ACU,ACU01,CoolantFlowRate,0.000183964,m^3/s
+ACU,ACU01,CoolantMaximumFlowRate,0.00145,m^3/s
+ACU,ACU01,CoolantTemperatureIn,12,C
+ACU,ACU01,CoolantTemperatureOut,20.2735,C
+ACU,ACU01,FanSpeed,100,%
+Controller,Air Temperature Controller,DeadBand,100,C
+Controller,Air Temperature Controller,Gain,9.62653,
+Controller,Air Temperature Controller,GainScalingFactor,1,
+Controller,Air Temperature Controller,InputSignal,21.2735,C
+Controller,Air Temperature Controller,Output,34.0041,%
+Controller,Air Temperature Controller,SetPoint,18,C
+ITEquipment,Server1,HeatPowerFactor,100,%
+ITEquipment,Server10,HeatPowerFactor,100,%
+ITEquipment,Server2,HeatPowerFactor,100,%
+ITEquipment,Server3,HeatPowerFactor,100,%
+ITEquipment,Server4,HeatPowerFactor,100,%
+ITEquipment,Server5,HeatPowerFactor,100,%
+ITEquipment,Server6,HeatPowerFactor,100,%
+ITEquipment,Server7,HeatPowerFactor,100,%
+ITEquipment,Server8,HeatPowerFactor,100,%
+ITEquipment,Server9,HeatPowerFactor,100,%
+Sensor,Average Return Air,Value,25.7712,C
+Sensor,Average Supply Air,Value,21.2735,C
+Sensor,back01,Value,38.3711,C
+Sensor,back02,Value,37.951,C
+Sensor,back03,Value,38.2075,C
+Sensor,back04,Value,38.2075,C
+Sensor,back05,Value,38.2436,C
+Sensor,back06,Value,37.7416,C
+Sensor,back07,Value,37.6395,C
+Sensor,back08,Value,37.6725,C
+Sensor,back09,Value,37.7081,C
+Sensor,back10,Value,37.7081,C
+Sensor,front1,Value,23.7095,C
+Sensor,front10,Value,24.4563,C
+Sensor,front2,Value,23.7095,C
+Sensor,front3,Value,23.4234,C
+Sensor,front4,Value,23.0625,C
+Sensor,front5,Value,23.1461,C
+Sensor,front6,Value,24.2155,C
+Sensor,front7,Value,23.827,C
+Sensor,front8,Value,23.827,C
+Sensor,front9,Value,23.7231,C
+<<,END,CSV,VER00,>>

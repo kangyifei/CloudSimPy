@@ -1,5 +1,5 @@
 from playground.DAG.utils.feature_synthesize import weights_calculate
-from core.alogrithm import Algorithm
+from core.algorithm import Algorithm
 
 
 class MaxWeightTaskalgorithm(Algorithm):

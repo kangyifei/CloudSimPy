@@ -7,9 +7,15 @@ class Cluster(object):
         self.machines = []
         self.jobs = []
         self.simulation = None
+        self.cluster_task_finished_num = 0
+        self.monitor = None
+        self.unfinished_tasks_new= {}
 
     def attach(self, simulation):
         self.simulation = simulation
+
+    def attach_monitor(self, monitor):
+        self.monitor = monitor
 
     @property
     def unfinished_jobs(self):
@@ -77,9 +83,12 @@ class Cluster(object):
 
     def add_job(self, job):
         self.jobs.append(job)
+        job.attach(self)
+        for task in job.tasks:
+            self.unfinished_tasks_new[hash(task)]=task
         # print("cluster: one job added")
-        self.simulation.job_added_event.succeed()
-        self.simulation.job_added_event = self.simulation.env.event()
+        # self.simulation.job_event.succeed(value="add")
+        # self.simulation.job_event = self.simulation.env.event()
 
     @property
     def cpu(self):
@@ -119,4 +128,3 @@ class Cluster(object):
             'memory': self.memory / self.memory_capacity,
             'disk': self.disk / self.disk_capacity,
         }
-

@@ -1,0 +1,419 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" width="1200" height="266" onload="init(evt)" viewBox="0 0 1200 266" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!--Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples.--><!--NOTES: --><defs><linearGradient id="background" y1="0" y2="1" x1="0" x2="0"><stop stop-color="#eeeeee" offset="5%"/><stop stop-color="#eeeeb0" offset="95%"/></linearGradient></defs><style type="text/css">
+text { font-family:"Verdana"; font-size:12px; fill:rgb(0,0,0); }
+#title { text-anchor:middle; font-size:17px; }
+#search { opacity:0.1; cursor:pointer; }
+#search:hover, #search.show { opacity:1; }
+#subtitle { text-anchor:middle; font-color:rgb(160,160,160); }
+#unzoom { cursor:pointer; }
+#frames > *:hover { stroke:black; stroke-width:0.5; cursor:pointer; }
+.hide { display:none; }
+.parent { opacity:0.5; }
+</style><script type="text/ecmascript"><![CDATA[var nametype = 'Function:';
+var fontsize = 12;
+var fontwidth = 0.59;
+var xpad = 10;
+var inverted = true;
+var searchcolor = 'rgb(230,0,230)';
+var fluiddrawing = true;
+var truncate_text_right = false;]]><![CDATA["use strict";
+var details, searchbtn, unzoombtn, matchedtxt, svg, searching, frames;
+function init(evt) {
+    details = document.getElementById("details").firstChild;
+    searchbtn = document.getElementById("search");
+    unzoombtn = document.getElementById("unzoom");
+    matchedtxt = document.getElementById("matched");
+    svg = document.getElementsByTagName("svg")[0];
+    frames = document.getElementById("frames");
+    searching = 0;
+
+    // Use GET parameters to restore a flamegraph's state.
+    var restore_state = function() {
+        var params = get_params();
+        if (params.x && params.y)
+            zoom(find_group(document.querySelector('[x="' + params.x + '"][y="' + params.y + '"]')));
+        if (params.s)
+            search(params.s);
+    };
+
+    if (fluiddrawing) {
+        // Make width dynamic so the SVG fits its parent's width.
+        svg.removeAttribute("width");
+        // Edge requires us to have a viewBox that gets updated with size changes.
+        var isEdge = /Edge\/\d./i.test(navigator.userAgent);
+        if (!isEdge) {
+          svg.removeAttribute("viewBox");
+        }
+        var update_for_width_change = function() {
+            if (isEdge) {
+                svg.attributes.viewBox.value = "0 0 " + svg.width.baseVal.value + " " + svg.height.baseVal.value;
+            }
+
+            // Keep consistent padding on left and right of frames container.
+            frames.attributes.width.value = svg.width.baseVal.value - xpad * 2;
+
+            // Text truncation needs to be adjusted for the current width.
+            var el = frames.children;
+            for(var i = 0; i < el.length; i++) {
+                update_text(el[i]);
+            }
+
+            // Keep search elements at a fixed distance from right edge.
+            var svgWidth = svg.width.baseVal.value;
+            searchbtn.attributes.x.value = svgWidth - xpad - 100;
+            matchedtxt.attributes.x.value = svgWidth - xpad - 100;
+        };
+        window.addEventListener('resize', function() {
+            update_for_width_change();
+        });
+        // This needs to be done asynchronously for Safari to work.
+        setTimeout(function() {
+            unzoom();
+            update_for_width_change();
+            restore_state();
+        }, 0);
+    } else {
+        restore_state();
+    }
+}
+// event listeners
+window.addEventListener("click", function(e) {
+    var target = find_group(e.target);
+    if (target) {
+        if (target.nodeName == "a") {
+            if (e.ctrlKey === false) return;
+            e.preventDefault();
+        }
+        if (target.classList.contains("parent")) unzoom();
+        zoom(target);
+
+        // set parameters for zoom state
+        var el = target.querySelector("rect");
+        if (el && el.attributes && el.attributes.y && el.attributes._orig_x) {
+            var params = get_params()
+            params.x = el.attributes._orig_x.value;
+            params.y = el.attributes.y.value;
+            history.replaceState(null, null, parse_params(params));
+        }
+    }
+    else if (e.target.id == "unzoom") {
+        unzoom();
+
+        // remove zoom state
+        var params = get_params();
+        if (params.x) delete params.x;
+        if (params.y) delete params.y;
+        history.replaceState(null, null, parse_params(params));
+    }
+    else if (e.target.id == "search") search_prompt();
+}, false)
+// mouse-over for info
+// show
+window.addEventListener("mouseover", function(e) {
+    var target = find_group(e.target);
+    if (target) details.nodeValue = nametype + " " + g_to_text(target);
+}, false)
+// clear
+window.addEventListener("mouseout", function(e) {
+    var target = find_group(e.target);
+    if (target) details.nodeValue = ' ';
+}, false)
+// ctrl-F for search
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
+        e.preventDefault();
+        search_prompt();
+    }
+}, false)
+// functions
+function get_params() {
+    var params = {};
+    var paramsarr = window.location.search.substr(1).split('&');
+    for (var i = 0; i < paramsarr.length; ++i) {
+        var tmp = paramsarr[i].split("=");
+        if (!tmp[0] || !tmp[1]) continue;
+        params[tmp[0]]  = decodeURIComponent(tmp[1]);
+    }
+    return params;
+}
+function parse_params(params) {
+    var uri = "?";
+    for (var key in params) {
+        uri += key + '=' + encodeURIComponent(params[key]) + '&';
+    }
+    if (uri.slice(-1) == "&")
+        uri = uri.substring(0, uri.length - 1);
+    if (uri == '?')
+        uri = window.location.href.split('?')[0];
+    return uri;
+}
+function find_child(node, selector) {
+    var children = node.querySelectorAll(selector);
+    if (children.length) return children[0];
+    return;
+}
+function find_group(node) {
+    var parent = node.parentElement;
+    if (!parent) return;
+    if (parent.id == "frames") return node;
+    return find_group(parent);
+}
+function orig_save(e, attr, val) {
+    if (e.attributes["_orig_" + attr] != undefined) return;
+    if (e.attributes[attr] == undefined) return;
+    if (val == undefined) val = e.attributes[attr].value;
+    e.setAttribute("_orig_" + attr, val);
+}
+function orig_load(e, attr) {
+    if (e.attributes["_orig_"+attr] == undefined) return;
+    e.attributes[attr].value = e.attributes["_orig_" + attr].value;
+    e.removeAttribute("_orig_" + attr);
+}
+function g_to_text(e) {
+    var text = find_child(e, "title").firstChild.nodeValue;
+    return (text)
+}
+function g_to_func(e) {
+    var func = g_to_text(e);
+    // if there's any manipulation we want to do to the function
+    // name before it's searched, do it here before returning.
+    return (func);
+}
+function update_text(e) {
+    var r = find_child(e, "rect");
+    var t = find_child(e, "text");
+    var w = parseFloat(r.attributes.width.value) * frames.attributes.width.value / 100 - 3;
+    var txt = find_child(e, "title").textContent.replace(/\([^(]*\)$/,"");
+    t.attributes.x.value = format_percent((parseFloat(r.attributes.x.value) + (100 * 3 / frames.attributes.width.value)));
+    // Smaller than this size won't fit anything
+    if (w < 2 * fontsize * fontwidth) {
+        t.textContent = "";
+        return;
+    }
+    t.textContent = txt;
+    // Fit in full text width
+    if (/^ *\$/.test(txt) || t.getComputedTextLength() < w)
+        return;
+    if (truncate_text_right) {
+        // Truncate the right side of the text.
+        for (var x = txt.length - 2; x > 0; x--) {
+            if (t.getSubStringLength(0, x + 2) <= w) {
+                t.textContent = txt.substring(0, x) + "..";
+                return;
+            }
+        }
+    } else {
+        // Truncate the left side of the text.
+        for (var x = 2; x < txt.length; x++) {
+            if (t.getSubStringLength(x - 2, txt.length) <= w) {
+                t.textContent = ".." + txt.substring(x, txt.length);
+                return;
+            }
+        }
+    }
+    t.textContent = "";
+}
+// zoom
+function zoom_reset(e) {
+    if (e.attributes != undefined) {
+        orig_load(e, "x");
+        orig_load(e, "width");
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_reset(c[i]);
+    }
+}
+function zoom_child(e, x, ratio) {
+    if (e.attributes != undefined) {
+        if (e.attributes.x != undefined) {
+            orig_save(e, "x");
+            e.attributes.x.value = format_percent((parseFloat(e.attributes.x.value) - x) * ratio);
+            if (e.tagName == "text") {
+                e.attributes.x.value = format_percent(parseFloat(find_child(e.parentNode, "rect[x]").attributes.x.value) + (100 * 3 / frames.attributes.width.value));
+            }
+        }
+        if (e.attributes.width != undefined) {
+            orig_save(e, "width");
+            e.attributes.width.value = format_percent(parseFloat(e.attributes.width.value) * ratio);
+        }
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_child(c[i], x, ratio);
+    }
+}
+function zoom_parent(e) {
+    if (e.attributes) {
+        if (e.attributes.x != undefined) {
+            orig_save(e, "x");
+            e.attributes.x.value = "0.0%";
+        }
+        if (e.attributes.width != undefined) {
+            orig_save(e, "width");
+            e.attributes.width.value = "100.0%";
+        }
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_parent(c[i]);
+    }
+}
+function zoom(node) {
+    var attr = find_child(node, "rect").attributes;
+    var width = parseFloat(attr.width.value);
+    var xmin = parseFloat(attr.x.value);
+    var xmax = xmin + width;
+    var ymin = parseFloat(attr.y.value);
+    var ratio = 100 / width;
+    // XXX: Workaround for JavaScript float issues (fix me)
+    var fudge = 0.001;
+    unzoombtn.classList.remove("hide");
+    var el = frames.children;
+    for (var i = 0; i < el.length; i++) {
+        var e = el[i];
+        var a = find_child(e, "rect").attributes;
+        var ex = parseFloat(a.x.value);
+        var ew = parseFloat(a.width.value);
+        // Is it an ancestor
+        if (!inverted) {
+            var upstack = parseFloat(a.y.value) > ymin;
+        } else {
+            var upstack = parseFloat(a.y.value) < ymin;
+        }
+        if (upstack) {
+            // Direct ancestor
+            if (ex <= xmin && (ex+ew+fudge) >= xmax) {
+                e.classList.add("parent");
+                zoom_parent(e);
+                update_text(e);
+            }
+            // not in current path
+            else
+                e.classList.add("hide");
+        }
+        // Children maybe
+        else {
+            // no common path
+            if (ex < xmin || ex + fudge >= xmax) {
+                e.classList.add("hide");
+            }
+            else {
+                zoom_child(e, xmin, ratio);
+                update_text(e);
+            }
+        }
+    }
+}
+function unzoom() {
+    unzoombtn.classList.add("hide");
+    var el = frames.children;
+    for(var i = 0; i < el.length; i++) {
+        el[i].classList.remove("parent");
+        el[i].classList.remove("hide");
+        zoom_reset(el[i]);
+        update_text(el[i]);
+    }
+}
+// search
+function reset_search() {
+    var el = document.querySelectorAll("#frames rect");
+    for (var i = 0; i < el.length; i++) {
+        orig_load(el[i], "fill")
+    }
+    var params = get_params();
+    delete params.s;
+    history.replaceState(null, null, parse_params(params));
+}
+function search_prompt() {
+    if (!searching) {
+        var term = prompt("Enter a search term (regexp " +
+            "allowed, eg: ^ext4_)", "");
+        if (term != null) {
+            search(term)
+        }
+    } else {
+        reset_search();
+        searching = 0;
+        searchbtn.classList.remove("show");
+        searchbtn.firstChild.nodeValue = "Search"
+        matchedtxt.classList.add("hide");
+        matchedtxt.firstChild.nodeValue = ""
+    }
+}
+function search(term) {
+    var re = new RegExp(term);
+    var el = frames.children;
+    var matches = new Object();
+    var maxwidth = 0;
+    for (var i = 0; i < el.length; i++) {
+        var e = el[i];
+        var func = g_to_func(e);
+        var rect = find_child(e, "rect");
+        if (func == null || rect == null)
+            continue;
+        // Save max width. Only works as we have a root frame
+        var w = parseFloat(rect.attributes.width.value);
+        if (w > maxwidth)
+            maxwidth = w;
+        if (func.match(re)) {
+            // highlight
+            var x = parseFloat(rect.attributes.x.value);
+            orig_save(rect, "fill");
+            rect.attributes.fill.value = searchcolor;
+            // remember matches
+            if (matches[x] == undefined) {
+                matches[x] = w;
+            } else {
+                if (w > matches[x]) {
+                    // overwrite with parent
+                    matches[x] = w;
+                }
+            }
+            searching = 1;
+        }
+    }
+    if (!searching)
+        return;
+    var params = get_params();
+    params.s = term;
+    history.replaceState(null, null, parse_params(params));
+
+    searchbtn.classList.add("show");
+    searchbtn.firstChild.nodeValue = "Reset Search";
+    // calculate percent matched, excluding vertical overlap
+    var count = 0;
+    var lastx = -1;
+    var lastw = 0;
+    var keys = Array();
+    for (k in matches) {
+        if (matches.hasOwnProperty(k))
+            keys.push(k);
+    }
+    // sort the matched frames by their x location
+    // ascending, then width descending
+    keys.sort(function(a, b){
+        return a - b;
+    });
+    // Step through frames saving only the biggest bottom-up frames
+    // thanks to the sort order. This relies on the tree property
+    // where children are always smaller than their parents.
+    var fudge = 0.0001;    // JavaScript floating point
+    for (var k in keys) {
+        var x = parseFloat(keys[k]);
+        var w = matches[keys[k]];
+        if (x >= lastx + lastw - fudge) {
+            count += w;
+            lastx = x;
+            lastw = w;
+        }
+    }
+    // display matched percent
+    matchedtxt.classList.remove("hide");
+    var pct = 100 * count / maxwidth;
+    if (pct != 100) pct = pct.toFixed(1);
+    matchedtxt.firstChild.nodeValue = "Matched: " + pct + "%";
+}
+function format_percent(n) {
+    return n.toFixed(4) + "%";
+}
+]]></script><rect x="0" y="0" width="100%" height="266" fill="url(#background)"/><text id="title" x="50.0000%" y="24.00">py-spy</text><text id="details" x="10" y="40.00"> </text><text id="unzoom" class="hide" x="10" y="24.00">Reset Zoom</text><text id="search" x="1090" y="24.00">Search</text><text id="matched" x="1090" y="255.00"> </text><svg id="frames" x="10" width="1180"><g><title>find_common_type (pandas\core\dtypes\cast.py:1381) (35 samples, 1.34%)</title><rect x="3.9388%" y="196" width="1.3384%" height="15" fill="rgb(227,0,7)"/><text x="4.1888%" y="206.50"></text></g><g><title>&lt;genexpr&gt; (pandas\core\dtypes\cast.py:1381) (34 samples, 1.30%)</title><rect x="3.9771%" y="212" width="1.3002%" height="15" fill="rgb(217,0,24)"/><text x="4.2271%" y="222.50"></text></g><g><title>find_common_type (numpy\core\numerictypes.py:657) (28 samples, 1.07%)</title><rect x="5.6597%" y="212" width="1.0707%" height="15" fill="rgb(221,193,54)"/><text x="5.9097%" y="222.50"></text></g><g><title>fast_xs (pandas\core\internals\managers.py:907) (98 samples, 3.75%)</title><rect x="3.0975%" y="164" width="3.7476%" height="15" fill="rgb(248,212,6)"/><text x="3.3475%" y="174.50">fast..</text></g><g><title>_interleaved_dtype (pandas\core\internals\managers.py:1872) (97 samples, 3.71%)</title><rect x="3.1358%" y="180" width="3.7094%" height="15" fill="rgb(208,68,35)"/><text x="3.3858%" y="190.50">_int..</text></g><g><title>find_common_type (pandas\core\dtypes\cast.py:1387) (40 samples, 1.53%)</title><rect x="5.3155%" y="196" width="1.5296%" height="15" fill="rgb(232,128,0)"/><text x="5.5655%" y="206.50"></text></g><g><title>_ixs (pandas\core\frame.py:2735) (139 samples, 5.32%)</title><rect x="2.9446%" y="148" width="5.3155%" height="15" fill="rgb(207,160,47)"/><text x="3.1946%" y="158.50">_ixs (p..</text></g><g><title>_try_cast (pandas\core\construction.py:537) (34 samples, 1.30%)</title><rect x="11.0134%" y="196" width="1.3002%" height="15" fill="rgb(228,23,34)"/><text x="11.2634%" y="206.50"></text></g><g><title>sanitize_array (pandas\core\construction.py:424) (67 samples, 2.56%)</title><rect x="10.0574%" y="180" width="2.5621%" height="15" fill="rgb(218,30,26)"/><text x="10.3074%" y="190.50">sa..</text></g><g><title>__init__ (pandas\core\series.py:305) (99 samples, 3.79%)</title><rect x="9.4073%" y="164" width="3.7859%" height="15" fill="rgb(220,122,19)"/><text x="9.6573%" y="174.50">__in..</text></g><g><title>make_block (pandas\core\internals\blocks.py:3040) (29 samples, 1.11%)</title><rect x="13.4608%" y="196" width="1.1090%" height="15" fill="rgb(250,228,42)"/><text x="13.7108%" y="206.50"></text></g><g><title>__init__ (pandas\core\internals\managers.py:1513) (43 samples, 1.64%)</title><rect x="13.3461%" y="180" width="1.6444%" height="15" fill="rgb(240,193,28)"/><text x="13.5961%" y="190.50"></text></g><g><title>__init__ (pandas\core\series.py:307) (49 samples, 1.87%)</title><rect x="13.1931%" y="164" width="1.8738%" height="15" fill="rgb(216,20,37)"/><text x="13.4431%" y="174.50">_..</text></g><g><title>_ixs (pandas\core\frame.py:2743) (198 samples, 7.57%)</title><rect x="8.7572%" y="148" width="7.5717%" height="15" fill="rgb(206,188,39)"/><text x="9.0072%" y="158.50">_ixs (pand..</text></g><g><title>__getitem__ (pandas\core\indexing.py:1768) (386 samples, 14.76%)</title><rect x="1.6826%" y="100" width="14.7610%" height="15" fill="rgb(217,207,13)"/><text x="1.9326%" y="110.50">__getitem__ (pandas\cor..</text></g><g><title>_getitem_axis (pandas\core\indexing.py:2140) (359 samples, 13.73%)</title><rect x="2.7151%" y="116" width="13.7285%" height="15" fill="rgb(231,73,38)"/><text x="2.9651%" y="126.50">_getitem_axis (pandas..</text></g><g><title>_get_loc (pandas\core\indexing.py:628) (359 samples, 13.73%)</title><rect x="2.7151%" y="132" width="13.7285%" height="15" fill="rgb(225,20,46)"/><text x="2.9651%" y="142.50">_get_loc (pandas\core..</text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:20) (399 samples, 15.26%)</title><rect x="1.2237%" y="84" width="15.2581%" height="15" fill="rgb(210,31,41)"/><text x="1.4737%" y="94.50">__init__ (playground\No..</text></g><g><title>__getitem__ (pandas\core\series.py:871) (38 samples, 1.45%)</title><rect x="17.3231%" y="116" width="1.4532%" height="15" fill="rgb(221,200,47)"/><text x="17.5731%" y="126.50"></text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:21) (61 samples, 2.33%)</title><rect x="16.4818%" y="84" width="2.3327%" height="15" fill="rgb(226,26,5)"/><text x="16.7318%" y="94.50">_..</text></g><g><title>__getattr__ (pandas\core\generic.py:5273) (42 samples, 1.61%)</title><rect x="17.2084%" y="100" width="1.6061%" height="15" fill="rgb(249,33,26)"/><text x="17.4584%" y="110.50"></text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:22) (52 samples, 1.99%)</title><rect x="18.8145%" y="84" width="1.9885%" height="15" fill="rgb(235,183,28)"/><text x="19.0645%" y="94.50">_..</text></g><g><title>__getattr__ (pandas\core\generic.py:5273) (39 samples, 1.49%)</title><rect x="19.3117%" y="100" width="1.4914%" height="15" fill="rgb(221,5,38)"/><text x="19.5617%" y="110.50"></text></g><g><title>__getitem__ (pandas\core\series.py:871) (38 samples, 1.45%)</title><rect x="19.3499%" y="116" width="1.4532%" height="15" fill="rgb(247,18,42)"/><text x="19.5999%" y="126.50"></text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:24) (42 samples, 1.61%)</title><rect x="20.8031%" y="84" width="1.6061%" height="15" fill="rgb(241,131,45)"/><text x="21.0531%" y="94.50"></text></g><g><title>__getattr__ (pandas\core\generic.py:5273) (32 samples, 1.22%)</title><rect x="21.1855%" y="100" width="1.2237%" height="15" fill="rgb(249,31,29)"/><text x="21.4355%" y="110.50"></text></g><g><title>__getitem__ (pandas\core\series.py:871) (31 samples, 1.19%)</title><rect x="21.2237%" y="116" width="1.1855%" height="15" fill="rgb(225,111,53)"/><text x="21.4737%" y="126.50"></text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:25) (30 samples, 1.15%)</title><rect x="22.4092%" y="84" width="1.1472%" height="15" fill="rgb(238,160,17)"/><text x="22.6592%" y="94.50"></text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:26) (40 samples, 1.53%)</title><rect x="23.5564%" y="84" width="1.5296%" height="15" fill="rgb(214,148,48)"/><text x="23.8064%" y="94.50"></text></g><g><title>__getattr__ (pandas\core\generic.py:5273) (34 samples, 1.30%)</title><rect x="23.7859%" y="100" width="1.3002%" height="15" fill="rgb(232,36,49)"/><text x="24.0359%" y="110.50"></text></g><g><title>__getitem__ (pandas\core\series.py:871) (33 samples, 1.26%)</title><rect x="23.8241%" y="116" width="1.2620%" height="15" fill="rgb(209,103,24)"/><text x="24.0741%" y="126.50"></text></g><g><title>__getitem__ (pandas\core\series.py:871) (32 samples, 1.22%)</title><rect x="25.4302%" y="116" width="1.2237%" height="15" fill="rgb(229,88,8)"/><text x="25.6802%" y="126.50"></text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:27) (42 samples, 1.61%)</title><rect x="25.0860%" y="84" width="1.6061%" height="15" fill="rgb(213,181,19)"/><text x="25.3360%" y="94.50"></text></g><g><title>__getattr__ (pandas\core\generic.py:5273) (33 samples, 1.26%)</title><rect x="25.4302%" y="100" width="1.2620%" height="15" fill="rgb(254,191,54)"/><text x="25.6802%" y="110.50"></text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:28) (35 samples, 1.34%)</title><rect x="26.6922%" y="84" width="1.3384%" height="15" fill="rgb(241,83,37)"/><text x="26.9422%" y="94.50"></text></g><g><title>__getattr__ (pandas\core\generic.py:5273) (28 samples, 1.07%)</title><rect x="26.9598%" y="100" width="1.0707%" height="15" fill="rgb(233,36,39)"/><text x="27.2098%" y="110.50"></text></g><g><title>__getitem__ (pandas\core\series.py:871) (28 samples, 1.07%)</title><rect x="26.9598%" y="116" width="1.0707%" height="15" fill="rgb(226,3,54)"/><text x="27.2098%" y="126.50"></text></g><g><title>__init__ (playground\Non_DAG_with_Energy\utils\csv_reader.py:29) (38 samples, 1.45%)</title><rect x="28.0306%" y="84" width="1.4532%" height="15" fill="rgb(245,192,40)"/><text x="28.2806%" y="94.50"></text></g><g><title>__getattr__ (pandas\core\generic.py:5273) (29 samples, 1.11%)</title><rect x="28.3748%" y="100" width="1.1090%" height="15" fill="rgb(238,167,29)"/><text x="28.6248%" y="110.50"></text></g><g><title>__getitem__ (pandas\core\series.py:871) (29 samples, 1.11%)</title><rect x="28.3748%" y="116" width="1.1090%" height="15" fill="rgb(232,182,51)"/><text x="28.6248%" y="126.50"></text></g><g><title>&lt;module&gt; (test_simulation.py:26) (748 samples, 28.60%)</title><rect x="1.0707%" y="68" width="28.6042%" height="15" fill="rgb(231,60,39)"/><text x="1.3207%" y="78.50">&lt;module&gt; (test_simulation.py:26)</text></g><g><title>step (simpy\core.py:214) (29 samples, 1.11%)</title><rect x="29.8662%" y="116" width="1.1090%" height="15" fill="rgb(208,69,12)"/><text x="30.1162%" y="126.50"></text></g><g><title>running_task_instances (core\job.py:45) (46 samples, 1.76%)</title><rect x="34.3786%" y="228" width="1.7591%" height="15" fill="rgb(235,93,37)"/><text x="34.6286%" y="238.50"></text></g><g><title>running_task_instances (core\job.py:46) (241 samples, 9.22%)</title><rect x="36.1377%" y="228" width="9.2161%" height="15" fill="rgb(213,116,39)"/><text x="36.3877%" y="238.50">running_task_..</text></g><g><title>run (core\scheduler.py:94) (337 samples, 12.89%)</title><rect x="32.5813%" y="148" width="12.8872%" height="15" fill="rgb(222,207,29)"/><text x="32.8313%" y="158.50">run (core\scheduler..</text></g><g><title>finished (core\simulation.py:38) (337 samples, 12.89%)</title><rect x="32.5813%" y="164" width="12.8872%" height="15" fill="rgb(206,96,30)"/><text x="32.8313%" y="174.50">finished (core\simu..</text></g><g><title>unfinished_jobs (core\cluster.py:23) (336 samples, 12.85%)</title><rect x="32.6195%" y="180" width="12.8489%" height="15" fill="rgb(218,138,4)"/><text x="32.8695%" y="190.50">unfinished_jobs (co..</text></g><g><title>finished (core\job.py:185) (326 samples, 12.47%)</title><rect x="33.0019%" y="196" width="12.4665%" height="15" fill="rgb(250,191,14)"/><text x="33.2519%" y="206.50">finished (core\job...</text></g><g><title>finished (core\job.py:86) (303 samples, 11.59%)</title><rect x="33.8815%" y="212" width="11.5870%" height="15" fill="rgb(239,60,40)"/><text x="34.1315%" y="222.50">finished (core\jo..</text></g><g><title>__call__ (playground\Non_DAG_with_Energy\algorithm\first_fit.py:12) (29 samples, 1.11%)</title><rect x="46.0421%" y="180" width="1.1090%" height="15" fill="rgb(206,27,48)"/><text x="46.2921%" y="190.50"></text></g><g><title>accommodate (core\machine.py:77) (305 samples, 11.66%)</title><rect x="55.2199%" y="196" width="11.6635%" height="15" fill="rgb(225,35,8)"/><text x="55.4699%" y="206.50">accommodate (core..</text></g><g><title>accommodate (core\machine.py:78) (149 samples, 5.70%)</title><rect x="66.8834%" y="196" width="5.6979%" height="15" fill="rgb(250,213,24)"/><text x="67.1334%" y="206.50">accommo..</text></g><g><title>__call__ (playground\Non_DAG_with_Energy\algorithm\first_fit.py:13) (675 samples, 25.81%)</title><rect x="47.1511%" y="180" width="25.8126%" height="15" fill="rgb(247,123,22)"/><text x="47.4011%" y="190.50">__call__ (playground\Non_DAG_with_Energy\..</text></g><g><title>tasks_which_has_waiting_instance (core\job.py:146) (110 samples, 4.21%)</title><rect x="75.2199%" y="212" width="4.2065%" height="15" fill="rgb(231,138,38)"/><text x="75.4699%" y="222.50">tasks..</text></g><g><title>tasks (core\job.py:125) (37 samples, 1.41%)</title><rect x="78.0115%" y="228" width="1.4149%" height="15" fill="rgb(231,145,46)"/><text x="78.2615%" y="238.50"></text></g><g><title>tasks_which_has_waiting_instance (core\job.py:147) (471 samples, 18.01%)</title><rect x="79.4264%" y="212" width="18.0115%" height="15" fill="rgb(251,118,11)"/><text x="79.6764%" y="222.50">tasks_which_has_waiting_inst..</text></g><g><title>has_waiting_task_instances (core\job.py:76) (385 samples, 14.72%)</title><rect x="82.7151%" y="228" width="14.7228%" height="15" fill="rgb(217,147,25)"/><text x="82.9651%" y="238.50">has_waiting_task_insta..</text></g><g><title>__call__ (playground\Non_DAG_with_Energy\algorithm\first_fit.py:7) (642 samples, 24.55%)</title><rect x="73.1166%" y="180" width="24.5507%" height="15" fill="rgb(247,81,37)"/><text x="73.3666%" y="190.50">__call__ (playground\Non_DAG_with_Energ..</text></g><g><title>tasks_which_has_waiting_instance (core\cluster.py:45) (628 samples, 24.02%)</title><rect x="73.6520%" y="196" width="24.0153%" height="15" fill="rgb(209,12,38)"/><text x="73.9020%" y="206.50">tasks_which_has_waiting_instance (core..</text></g><g><title>job_added_schedule (core\scheduler.py:25) (1,359 samples, 51.97%)</title><rect x="45.7361%" y="164" width="51.9694%" height="15" fill="rgb(227,1,9)"/><text x="45.9861%" y="174.50">job_added_schedule (core\scheduler.py:25)</text></g><g><title>start_task_instance (core\job.py:60) (45 samples, 1.72%)</title><rect x="97.7438%" y="180" width="1.7208%" height="15" fill="rgb(248,47,43)"/><text x="97.9938%" y="190.50"></text></g><g><title>schedule (core\job.py:249) (29 samples, 1.11%)</title><rect x="98.3556%" y="196" width="1.1090%" height="15" fill="rgb(221,10,30)"/><text x="98.6056%" y="206.50"></text></g><g><title>_resume (simpy\events.py:363) (1,782 samples, 68.15%)</title><rect x="31.3576%" y="132" width="68.1453%" height="15" fill="rgb(210,229,1)"/><text x="31.6076%" y="142.50">_resume (simpy\events.py:363)</text></g><g><title>run (core\scheduler.py:96) (1,409 samples, 53.88%)</title><rect x="45.6214%" y="148" width="53.8815%" height="15" fill="rgb(222,148,37)"/><text x="45.8714%" y="158.50">run (core\scheduler.py:96)</text></g><g><title>job_added_schedule (core\scheduler.py:32) (46 samples, 1.76%)</title><rect x="97.7438%" y="164" width="1.7591%" height="15" fill="rgb(234,67,33)"/><text x="97.9938%" y="174.50"></text></g><g><title>&lt;module&gt; (test_simulation.py:32) (1,832 samples, 70.06%)</title><rect x="29.8279%" y="68" width="70.0574%" height="15" fill="rgb(247,98,35)"/><text x="30.0779%" y="78.50">&lt;module&gt; (test_simulation.py:32)</text></g><g><title>run (playground\Non_DAG_with_Energy\utils\episode.py:21) (1,832 samples, 70.06%)</title><rect x="29.8279%" y="84" width="70.0574%" height="15" fill="rgb(247,138,52)"/><text x="30.0779%" y="94.50">run (playground\Non_DAG_with_Energy\utils\episode.py:21)</text></g><g><title>run (simpy\core.py:138) (1,832 samples, 70.06%)</title><rect x="29.8279%" y="100" width="70.0574%" height="15" fill="rgb(213,79,30)"/><text x="30.0779%" y="110.50">run (simpy\core.py:138)</text></g><g><title>step (simpy\core.py:222) (1,800 samples, 68.83%)</title><rect x="31.0516%" y="116" width="68.8337%" height="15" fill="rgb(246,177,23)"/><text x="31.3016%" y="126.50">step (simpy\core.py:222)</text></g><g><title>all (2,615 samples, 100%)</title><rect x="0.0000%" y="52" width="100.0000%" height="15" fill="rgb(230,62,27)"/><text x="0.2500%" y="62.50"></text></g></svg></svg>

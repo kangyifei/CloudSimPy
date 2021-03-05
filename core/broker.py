@@ -18,8 +18,12 @@ class Broker(object):
     def run(self):
         for job_config in self.job_configs:
             assert job_config.submit_time >= self.env.now
+            # print("broker:","before yield")
+            #(now+timeouttime,func)
             yield self.env.timeout(job_config.submit_time - self.env.now)
+            # print("broker:","after yield")
             job = Broker.job_cls(self.env, job_config)
-            # print('a task arrived at time %f' % self.env.now)
+            # print('a job arrived at time %f' % self.env.now)
             self.cluster.add_job(job)
+            # print("task len:", len(self.cluster.tasks_which_has_waiting_instance))
         self.destroyed = True

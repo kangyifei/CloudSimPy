@@ -1,0 +1,200 @@
+6SigmaDC Project File. Version: 1. File type: Project
+Virtual Facility
+  ProjectID
+    1760822-57427
+  Product Type
+    Room
+  Solution Type
+    Standard
+  Status
+    Restart
+  Transient
+    Option= Steady
+  Iterations
+    First Iteration= 297
+    Last Iteration= 1000
+    Autosave Interval= 1800
+    Monitor Interval= 1
+  Turbulence Model
+    Standard_KE
+  Inlet Turbulence
+    On
+    Inlet Specification Type= 0
+  Face Resistance Turbulence
+    Off
+  Volume Resistance Turbulence
+    Off
+  Set Face Resistance Flow To Laminar
+    Off
+  Set Volume Resistance Flow To Laminar
+    Off
+  Turbulent Viscosity Upper Bound= 1e+10
+  Store Turbulent Viscosity
+    Off
+  Store Turbulence Generation
+    Off
+  Store YPlus
+    Off
+  Wall Function Type= 0
+  Allow Object Wall Function= No
+  Has Generation By Buoyancy= No
+  Termination Factor Version 2
+    Residuals Only
+    1
+    Use Reference Values= Yes
+    Use Solid Cell Correction= No
+    Use Cell Flux= No
+    Use Transient Stop= No
+  Flow Blockage Limit
+    0.5
+  Use Consistent Momentum
+    No
+  Use Fix Resistance Coefficient
+    Yes
+  Allow Momentum Diffusion across Resistance
+    No
+  Adjust Coefficients For Pressure
+    Yes
+  Maximum Temperature Threshold
+    1
+  Thermal Boundaries
+    Surface Temperature= Cell Value
+  Monitor Thermal Data
+    No
+  Use Thin Solid Heat Flux Relaxation
+    No
+  Apply Anisotropic Correction
+    0
+  Anisotropic Correction Relaxation
+    1
+  Adjust Solid Object Surface Area
+    No
+  Calculate ACU Zones of Influence
+    No
+  Allow Moving Geometries
+    No
+  ACU Response Time
+    6e+08
+  Mass Balance
+    Check= Yes
+    Global Criterion= 0.0001
+    Local Criterion= 1e-05
+  Device Pressure Relaxation
+    Adjust= Yes
+    Automatic= Yes
+  Flow Rate Relaxation
+    Adjust= No
+  Effectiveness Indices
+    Off
+  Thermal Comfort
+    Off
+  Solar Radiation
+    Off
+  Heat Radiation
+    Off
+  Joule Heating
+    Off
+  Exergy Loss Calculator
+    Off
+  Convective HTC
+    Off
+  Wall Distance Calculator
+    Off
+  Multiple Solution Regions
+    On
+    Remove Passive Regions= Yes
+    Use Multiple Reference Temperatures= No
+    Store Region Geometry= No
+    Write Region Summary= No
+  Error Fields
+    Off
+  Check Boundary Attributes
+    Off
+  Solution Summary
+    No
+  Hybrid Cells
+    On
+    Ignore Hybrid Cells= No
+    Split Face Generation Option= 0
+    Max Open Area Fraction= 2
+    Max Cell Expansion Ratio= 5
+    Use Hybrid Cell Regions= No
+    Eliminate Tiny Gaps= No
+    Adjust Flow Boundaries= No
+    Adjust Resistance Boundaries= Yes
+    Adjust Friction= No
+    Validate Cells= Yes
+    Minimum Open Area Fraction= 0.0001
+    Cell Tolerance= 0.0005
+    Wall Distance Tolerance= 0.01
+    Minimum Wall Distance Fraction= 0.1
+    Smooth Wall Distance= Yes
+    Use Average Mass= No
+    Merge Tiny Cells= No
+  Allow Stagnant Cells
+    No
+  Miscellaneous
+    Use Potential Flow Solver= No
+    Use Mixed Precision Solver= No
+    Solver Precision= 1
+    Use Face Velocity Solver= No
+    Use Cell Momentum Convection= No
+    Pressure Coefficient Type= 1
+    Delete Distributed Data= Yes
+    Delete Temporary Solver Files= Yes
+    Require Total Pressure= No
+    Store Total Pressure= No
+    Store Density= No
+    Store Heat Fluxes= No
+    Store Laminar Viscosity= No
+    Store Conductivity= No
+    Store Specific Heat= No
+    Binary Output= Yes
+    Apply AMG Extension= Yes
+    Coupling Level= 0
+    Freeze Flow= No
+    Save Profiling Info= No
+    Ignore Top AMG Coarse Level= Yes
+    Agglomeration Type= 0
+    Use Gradient Reconstruction Scheme= No
+    Straighten Reversed Grille Flows= Yes
+    Eliminate Blocked Momentum Cells= No
+    Simplify Computational Geometry= Yes
+    Use Generic Scalar= No
+    Write Variable Min Max Values= No
+    Store Momentum Fields= Yes
+    Run Additional Analysis On Cancel= No
+    Store Grid Connectivity= Yes
+    Save Solution Geometries= No
+  Reference Data
+    Velocity= 1
+    Density= 1
+    Pressure= 0
+  Thermal Resistor Network Control
+    Off
+    Compact Component Generator
+      Weight Factor= 0.5
+      Maximum Number Of Iterations= 1000
+      Convergence Criterion= 1e-07
+      Minimum Resistor Bound= 1e-05
+      Maximum Resistor Bound= 100000
+  Gravity
+    Active= Yes
+    Gx= 0
+    Gy= -9.81
+    Gz= 0
+    Reference Temperature= 20
+    Has Auto Reference Temperature= Yes
+    Boundary Modification= No
+  Parallel Solver Emulator
+    Off
+  External Format Data
+    0
+  Domain Decomposition
+    Type= Unstructured
+    Direction= -1
+    Domains= 4
+    Partitioning= Unstructured
+    Use Edge Weighted Partitioning= No
+    Use Coarse Graph For Partitioning= Yes
+    Extend Communication Buffers= Yes
