@@ -44,17 +44,17 @@ class Machine(object):
     @property
     def running_task_instances(self):
         ls = []
-        for task_instance in self.task_instances:
-            if task_instance.started and not task_instance.finished:
-                ls.append(task_instance)
+        # for task_instance in self.task_instances:
+        #     if task_instance.started and not task_instance.finished:
+        #         ls.append(task_instance)
         return ls
 
     @property
     def finished_task_instances(self):
         ls = []
-        for task_instance in self.task_instances:
-            if task_instance.finished:
-                ls.append(task_instance)
+        # for task_instance in self.task_instances:
+        #     if task_instance.finished:
+        #         ls.append(task_instance)
         return ls
 
     def calculate_power(self):
@@ -68,7 +68,7 @@ class Machine(object):
             mem = 0
         elif mem > 0.9999:
             mem = 1
-        power=100 * (cpu ** 3) + 5 * mem + 150
+        power = 100 * (cpu ** 3) + 5 * mem + 150
         return power
 
     def attach(self, cluster):
@@ -105,6 +105,10 @@ class Machine(object):
             'finished_task_instances': len(self.finished_task_instances),
             'power': self.calculate_power()
         }
+
+    @property
+    def power(self):
+        return self.calculate_power()
 
     def __eq__(self, other):
         return isinstance(other, Machine) and other.id == self.id

@@ -17,6 +17,7 @@ SYNE_FREQUENCY = int(1e3)
 LEARN_FREQUENCY = int(100)
 import numpy
 
+
 # SumTree
 # a binary tree data structure where the parent’s value is the sum of its children
 
@@ -194,18 +195,26 @@ class Agent(object):
         return self.target_network(state)
 
     @torch.no_grad()
+    def eval_net_eval(self, state):
+        return self.eval_network(state)
+
+    @torch.no_grad()
+    def replace_net(self):
+        self.target_network.load_state_dict(self.eval_network.state_dict())
+
+    @torch.no_grad()
     def append_sample(self, state, action, reward, next_state, done):
         state_t = torch.FloatTensor(state).to(self.device)
         next_state_t = torch.FloatTensor(next_state).to(self.device)
-        eval_q = self.eval_network.forward(state_t.view(1,-1))
+        eval_q = self.eval_network.forward(state_t.view(1, -1))
         # 只留下实际发生动作的q值
         eval_q_actul = eval_q.view(-1)[action].item()
         # 计算eval网络中应该选择的动作
         action_from_eval_q = eval_q.max(1)[1].view(-1)
-        target_q = self.target_net_eval(next_state_t.view(1,-1))
+        target_q = self.target_net_eval(next_state_t.view(1, -1))
         target_q = target_q.view(-1)[action_from_eval_q].item()
         target_q_actul = reward + GAMMA * target_q * done
-        error = abs(eval_q_actul-target_q_actul)
+        error = abs(eval_q_actul - target_q_actul)
         self.memory.add(error, (state, action, reward, next_state, done))
 
     def learn(self, state, action, reward, next_state, done):
@@ -218,7 +227,7 @@ class Agent(object):
             # print("mem not full ")
             return
         if self.times % SYNE_FREQUENCY == 0:
-            self.target_network.load_state_dict(self.eval_network.state_dict())
+            self.replace_net()
         if self.times % LEARN_FREQUENCY == 0:
             batch, idx, is_weight = self.memory.sample(BATCH_SIZE)
 
@@ -229,16 +238,21 @@ class Agent(object):
             next_state = torch.FloatTensor([x[3] for x in batch]).to(self.device)
             done = torch.FloatTensor([[x[4]] for x in batch]).to(self.device)
 
-            # 计算eval网络中每个动作对应的Q值
-            eval_q = self.eval_network.forward(state)
+            # 计算本state的q值
+            state_eval_q = self.eval_network(next_state)
             # 只留下实际发生动作的q值
-            eval_q_actul = eval_q.gather(1, action)
+            eval_q_actul = state_eval_q.gather(1, action)
+
+            # 计算eval网络中next_state对应的Q值
+            next_state_eval_q = self.eval_net_eval(next_state)
             # 计算eval网络中应该选择的动作
-            action_from_eval_q = eval_q.max(1)[1].view(-1, 1)
+            action_from_eval_q = next_state_eval_q.max(1)[1].view(-1, 1)
+            # 计算target网络中net_state对应的Q值
             target_q = self.target_net_eval(next_state)
+            # 根据eval中的最大动作选择实际q值
             target_q = target_q.gather(1, action_from_eval_q)
             target_q_actul = reward + GAMMA * target_q.view(BATCH_SIZE, 1) * done
-            weights=abs(target_q_actul-eval_q_actul)
+            weights = abs(target_q_actul - eval_q_actul)
             for i in range(BATCH_SIZE):
                 self.memory.update(idx[i], weights[i].item())
             loss = (self.loss_func(eval_q_actul, target_q_actul) * is_weight).mean()
@@ -246,4 +260,3 @@ class Agent(object):
             self.optimizer.zero_grad()
             loss.backward()
             self.optimizer.step()
-

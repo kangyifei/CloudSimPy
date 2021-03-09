@@ -1,7 +1,6 @@
 import os
 import time
 import numpy as np
-import tensorflow as tf
 from multiprocessing import Process, Manager
 import sys
 
@@ -13,11 +12,10 @@ from playground.Non_DAG_with_Energy.utils.tools import multiprocessing_run, aver
     average_waiting_time
 from playground.Non_DAG_with_Energy.utils.episode import Episode
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 # tf.compat.v1.disable_eager_execution()
 
 np.random.seed(41)
-tf.random.set_seed(1)
 # ************************ Parameters Setting Start ************************
 machines_number = 5
 jobs_len = 10
@@ -42,7 +40,7 @@ jobs_csv = './jobs.csv'
 machine_configs = [MachineConfig(64, 1, 1) for i in range(machines_number)]
 csv_reader = CSVReader(jobs_csv)
 jobs_configs = csv_reader.generate(0, jobs_len)
-from playground.Non_DAG_with_Energy.algorithm.dueling_DQN.DQN_algorithm import DQNAlgorithm
+from playground.Non_DAG_with_Energy.algorithm.dueling_DDQN.DQN_algorithm import DQNAlgorithm
 
 algorithm = DQNAlgorithm(machine_configs)
 total_energy_consume_list = []

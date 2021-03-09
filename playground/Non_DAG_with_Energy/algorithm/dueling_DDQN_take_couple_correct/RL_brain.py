@@ -165,7 +165,7 @@ class DuelingNet(nn.Module):
         adv = self.adv(adv)
         val = self.val(val).expand(x.size(0), self.num_actions)
 
-        x = val + adv - adv.mean(1).unsqueeze(1).expand(x.size(0), self.num_actions)
+        x = val + adv - adv.mean(0).unsqueeze(1).expand(x.size(0), self.num_actions)
         return x
 
 
@@ -185,9 +185,9 @@ class Agent(object):
         if israndom and random.random() < EPSILON:
             if EPSILON > FINAL_EPSILON:
                 EPSILON = EPSILON * DELAY_EPSILON
-            return np.random.randint(0, state.shape[0])
+            return np.random.randint(0, len(state))
         state = torch.FloatTensor(state).to(self.device)
-        actions_value = self.eval_network.forward(state).cpu()
+        actions_value = self.eval_network(state).cpu()
         if EPSILON > FINAL_EPSILON:
             EPSILON = EPSILON * DELAY_EPSILON
         return torch.max(actions_value, 0)[1].item()
@@ -208,10 +208,15 @@ class Agent(object):
     def append_sample(self, state, action, reward, next_state, done):
         state_t = torch.FloatTensor(state).to(self.device)
         next_state_t = torch.FloatTensor(next_state).to(self.device)
-        eval_q = self.eval_network.forward(state_t.view(1, -1))
-        eval_q_actul = eval_q.item()
-        target_q = self.target_net_eval(next_state_t.view(1, -1))
-        target_q = target_q.view(-1).item()
+        eval_q = self.eval_network(state_t)
+        # 只留下实际发生动作的q值
+        # print(state, action, reward, next_state, done)
+        eval_q_actul = eval_q.view(-1)[action].item()
+        # 计算eval网络中应该选择的动作
+        next_state_eval_q=self.eval_network(next_state_t)
+        action_from_eval_q = next_state_eval_q.view(-1).max(0)[1].item()
+        target_q = self.target_network(next_state_t)
+        target_q = target_q.view(-1)[action_from_eval_q].item()
         target_q_actul = reward + GAMMA * target_q * done
         error = abs(eval_q_actul - target_q_actul)
         self.memory.add(error, (state, action, reward, next_state, done))
@@ -228,31 +233,39 @@ class Agent(object):
         if self.times % SYNE_FREQUENCY == 0:
             self.replace_net()
         if self.times % LEARN_FREQUENCY == 0:
-            batch, idx, is_weight = self.memory.sample(BATCH_SIZE)
-
-            is_weight = torch.FloatTensor(is_weight).to(self.device)
-            state = torch.FloatTensor([x[0] for x in batch]).to(self.device)
-            action = torch.LongTensor([[x[1]] for x in batch]).to(self.device)
-            reward = torch.FloatTensor([[x[2]] for x in batch]).to(self.device)
-            next_state = torch.FloatTensor([x[3] for x in batch]).to(self.device)
-            done = torch.FloatTensor([[x[4]] for x in batch]).to(self.device)
-
-            # 计算本state的q值
-            state_eval_q = self.eval_network(state)
-
-
-            # 计算eval网络中next_state对应的Q值
-            # next_state_eval_q = self.eval_net_eval(next_state)
-            # 计算eval网络中应该选择的动作
-            # action_from_eval_q = next_state_eval_q.max(1)[1].view(-1, 1)
-            target_q = self.target_net_eval(next_state)
-            # target_q = target_q.gather(1, action_from_eval_q)
-            target_q_actul = reward + GAMMA * target_q.view(BATCH_SIZE, 1) * done
-            weights = abs(target_q_actul - state_eval_q)
+            batch, idx, is_weight_list = self.memory.sample(BATCH_SIZE)
+            is_weight_list=torch.FloatTensor(is_weight_list).to(self.device)
+            # batch = torch.FloatTensor(batch).to(self.device)
+            loss=0
             for i in range(BATCH_SIZE):
-                self.memory.update(idx[i], weights[i].item())
-            loss = (self.loss_func(state_eval_q, target_q_actul) * is_weight).mean()
+                is_weight = is_weight_list[i]
+                state = torch.FloatTensor(batch[i][0]).to(self.device)
+                action=batch[i][1]
+                # action = torch.LongTensor(batch[i][1]).to(self.device)
+                # print(type(batch[i][2]), batch[i][2])
+                reward=batch[i][2]
+                # reward = torch.FloatTensor([]).to(self.device)
+                next_state = torch.FloatTensor(batch[i][3]).to(self.device)
+                # done = torch.FloatTensor([batch[i][4]]).to(self.device)
+                done=batch[i][4]
+                # 计算本state的q值
+                state_eval_q = self.eval_network(state)
+                # 只留下实际发生动作的q值
+                eval_q_actul = state_eval_q.view(-1)[action]
 
+                # 计算eval网络中next_state对应的Q值
+                next_state_eval_q = self.eval_net_eval(next_state)
+                # 计算eval网络中应该选择的动作
+                action_from_eval_q = next_state_eval_q.view(-1).max(0)[1].item()
+                # 计算target网络中net_state对应的Q值
+                target_q = self.target_net_eval(next_state)
+                # 根据eval中的最大动作选择实际q值
+                target_q = target_q.view(-1)[action_from_eval_q]
+                target_q_actul = reward + GAMMA * target_q* done
+                weights = abs(target_q_actul - eval_q_actul)
+                self.memory.update(idx[i], weights.item())
+                loss += self.loss_func(eval_q_actul, target_q_actul) * is_weight
+            loss=loss/BATCH_SIZE
             self.optimizer.zero_grad()
             loss.backward()
             self.optimizer.step()
